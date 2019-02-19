@@ -3,7 +3,7 @@ My personal collection of computer science tutorials / MOOC / videos / books.
 
 ### Programming language 
 + [Linux C编程一站式学习](http://akaedu.github.io/book/index.html)
-+ [The Rust programming language] (https://doc.rust-lang.org/book/)
++ [The Rust programming language](https://doc.rust-lang.org/book/)
 
 ### Computer science basics
 + [Computer Science: Programming with a Purpose](https://www.coursera.org/learn/cs-programming-java/) (Princeton University)
