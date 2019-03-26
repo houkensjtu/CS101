@@ -92,7 +92,7 @@ Seeking means: having a goal. But finding means: being free, being open, having 
 <a href="http://newgame-anime.com/">New Game!!</a>
 ```
 
-### 4. Table
+### 4. Table的写法
 Table即是表格，用来显示格式化的数据。这里值得一提的是，曾经有用Table来进行HTML页面规划的方法，但是这种方法缺乏柔软性，且在写HTML时需要引入大量的Table Tag，修改起来也很麻烦。更为现代的方法是使用CSS来处理页面的空间设计，用表格进行规划的方法已经过时且应尽量被避免。
 所有的表格内容都用table tag包括起来，其中每一行用tr(table row），每个元素用td（table data）表示。
 ```html
@@ -114,8 +114,41 @@ Table即是表格，用来显示格式化的数据。这里值得一提的是，
 </table>
 ```
 
-### 5. Form
+### 5. Form的写法
 与上述的HTML元素不同，Form的目的是由用户向服务器方发送信息。其方式可以多种多样，比如文本输入区域，下拉列表，选择按钮等。
 
 ## :koala:CSS Basics
+CSS与HTML一样并不是编程语言，而是一种用来进行对网页格式和风格进行管理的语言。CSS的基本工作原理就是对HTML中的元素进行指定性地定制。比如，将HTML中所有的p元素（段落）变成红色的CSS写法是
+```css
+p {
+  color: red;
+}
+```
+可以观察到这种语法多少有点类似于c，每个元素用{}包括，每个语句都用；进行断句。
+利用CSS时，需要将CSS代码保存到文件中，并在HTML的head中进行如下的指定。
+```html
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+```
+
+### 1. CSS的原子
+CSS的最基本组成元素就是一个一个的rule set。每个rule都有一个selector来指定其作用的对象，至少一个属性名称和一个属性值。属性名称和属性值用:隔开。你也可以同时在一个rule set中指定复数个对象，比如
+```css
+p, li, h1 {
+  color: red;
+  width: 500px;
+  border: 1px solid black;
+}
+```
+注意复数个对象之间，用逗号隔开。
+#### Selector的种类
+Selector并不一定是HTML中的tag名，也可以是属性或者其他值，而且这些条件都可以进行叠加，以方便对特定的元素进行定点的定制。比如
+```css
+table td{
+  color : red;
+}
+```
+这样的句式就是对所有table中的td元素进行指定(注意这里table和td之间是空格，不是逗号)。当然CSS还有很多很多可以指定的Selector，具体可以参考[MDN开发者档案](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)。
+
+### 2. 字体
+
 ## :alien:Javascript Basics
