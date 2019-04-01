@@ -150,5 +150,78 @@ table td{
 这样的句式就是对所有table中的td元素进行指定(注意这里table和td之间是空格，不是逗号)。当然CSS还有很多很多可以指定的Selector，具体可以参考[MDN开发者档案](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors)。
 
 ### 2. 字体
+为了使用一种新的字体，我们首先需要在html文件中链接这些字体。比如说，添加如下链接到index.html的head段就可以利用Google的免费字体OpenSans。
+```html
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+```
+
+然后，我们就可以在css中指定使用这种字体，比如：
+```css
+html {
+  font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: 'Open Sans', sans-serif; /* this should be the rest of the output you got from Google fonts */
+  }
+  
+  h1 {
+  font-size: 60px;
+  text-align: center;
+  }
+
+  p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+  }
+```
+
+### 3.Box的概念
+就像前面提到的，现在html网页的布局不再使用以往的table来实现，而是通过在css中划分box来实现。Box具有属性包括：
+- padding : 周围的空间大小（从文字到border）
+- border : 边界线
+- margin ： border外面的空间  
+![alt text](https://mdn.mozillademos.org/files/9443/box-model.png "css box")
+
+首先我们尝试给整个html页面加上一个背景颜色：
+```css
+html {
+  background-color: #00539F;
+}
+```
+
+我们可以这样定制我们的body，使其居中并具有固定的宽度600px，一定的边界，以及5px宽的黑色边界框：
+```css
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+```
+你还可以这样定制图片的布局，使得所有图片都自动居中：
+```css
+img {
+  display: block;
+  margin: 0 auto;
+}
+```
+上述格式中margin后面有一个0一个auto的意味是，元素上方及下方取0，而左右侧取自动空余（也就是居中了）。
 
 ## :alien:Javascript Basics
+
+Javascript是一种运行在浏览器中的程序语言，也就是说，只要你有安装浏览器，就可以运行Javascript，这使得编写运行Javascript程序比绝大多数其他语言都要容易。同时，由于今天的软件运行环境比以往都要更加的多样化(Windows，Mac，Linux，Smartphone，Tablet...)，而所有这些平台都拥有基本的浏览器，这使得Javascript先天更加容易接触到更多的用户。虽然在语言设计上Javascript受到很多诟病，但是需求驱动发展，Javascript近年迅速的发展使其已然成为程序员需要掌握的语言中不可或缺的一门。
+
+### 1. 如何Hello World
+首先我们需要在存放网页的文件夹中新建一个叫做scripts的文件夹，并新建一个main.js的代码文件来存放Javascript代码。然后，我们在html文件的body中最下方加入如下的指示，告诉浏览器寻找到我们的代码文件：
+```html
+<script src="scripts/main.js"></script>
+```
+这里把这条指示放到body最下面的理由是，html也像一般的程序代码一样，一般会被从上向下执行。试想如果我们将JS的命令放在body内容出现之前，那么代码中如果用到html body中的元素，浏览器就有可能找不到而出现奇怪的错误。  
+在代码文件中我们填入下面的代码，其意义是选中html中的h1标题，并将内容替换成Hello World!
+```Javascript
+var myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
+```
+![alt text](https://mdn.mozillademos.org/files/9543/hello-world.png "JS hello world")
+
+### 2. Javascript基础语法
