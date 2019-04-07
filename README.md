@@ -7,6 +7,7 @@
 
 ## :two: Programming language 
 + [Linux C编程一站式学习](http://akaedu.github.io/book/index.html)
++ :beetle: [My GDB Tips](gdbtips.md)
 + [The Rust programming language](https://doc.rust-lang.org/book/)
 
 ## :three: Operating system
