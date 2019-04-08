@@ -1,4 +1,4 @@
-## :beetle: My GDB Tips
+## :beetle: GDB Cheatsheet
 
 GDB作为一种原始的debug工具，不受环境限制，且使用得当的情况下具有很高可定制性。
 
