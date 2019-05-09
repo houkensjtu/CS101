@@ -1,6 +1,6 @@
 ## :bird: Think Python 2e notes
 
-> How to think like a compputer scientist <= 言い過ぎ
+> How to think like a computer scientist <= 言い過ぎ
 
 ### Chapter 1 : The way of the program
 
@@ -25,4 +25,23 @@ type('42')
 n  = 17
 pi = 3.1415926
 ```
-
+- Variable name (don't use Python's keywords)
+- Expressions and statments
+  - Expression : combination of values and variables and operators. The interpreter **evaluates the expression.**
+  - Statement : A unit of code that **has an effect.** The interpreter **execute the statement.**
+```Python 
+# Expression : will return a value
+>>> 43 + 12
+>>> 55
+# Statement : effect is creating a variable
+>>> a = 55
+>>> 
+```
+- Script mode : In script mode, the result of an expression won't be printed out.
+- String operations : Strings can be connected simply using "+"; but no "-", "*" or "/" is allowed.
+- 3 types of error :
+  - Syntax error : Illegal expression.
+  - Runtime error : Also called exceptions. Only happen when the programm running.
+  - Semantic error : Logic error. The program is not doing what's supposed to be done.
+  
+ ### Chapter 3 : Functions
