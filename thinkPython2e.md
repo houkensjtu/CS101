@@ -10,10 +10,10 @@
 - Arithmatic operations
 - Value and types (can use type() to check the type of a value)
 ```Python
-type(42)
-#=> <class 'int'>
-type('42')
-#=> <class 'str'>
+>>> type(42)
+>>> <class 'int'>
+>>> type('42')
+>>> <class 'str'>
 ```
 - Compare natural and formal language
 - Debugging (Only introduced what is debugging; no actual debugging skill)
@@ -45,3 +45,41 @@ pi = 3.1415926
   - Semantic error : Logic error. The program is not doing what's supposed to be done.
   
  ### Chapter 3 : Functions
+ 
+ - Making call to functions
+ ```Python
+>>> type(42)
+>>> <class 'int'>
+
+>>> str(42)
+>>> '42'
+ ```
+ 
+ - Math module
+ ```Python
+# This statement creates a module object named math. 
+# If you display the module object, you get some information about it:
+>>> import math
+>>> math
+>>> <module 'math' (built-in)>
+# To see what's included in math module:
+>>> dir(math)
+>>> help(math)
+
+# The dot notation:
+>>> math.sqrt(2)
+>>> 1.414...
+
+# Or use the following statment to avoid dot, but it's not recommended.
+>>> from math import *
+>>> sqrt(2)
+    
+# Recommend
+>>> import math as m
+>>> m.sqrt(2)
+    
+# Or 
+>>> from math import sqrt
+>>> sqrt(2)
+```
+  
