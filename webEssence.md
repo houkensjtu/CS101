@@ -224,4 +224,60 @@ myHeading.textContent = 'Hello world!';
 ```
 ![alt text](https://mdn.mozillademos.org/files/9543/hello-world.png "JS hello world")
 
-### 2. Javascript基础语法
+### 2. Javascript佛脚语法
+- 变量   
+Javascript中存在数据类型(data type)的概念，但是变量是没有严格型定义的，变量可以存储整数，而后被改成字符或者任何。
+```Javascript
+// 语句后面的分号并不是必须的
+var myVar;
+myVar = "Hello";
+
+// 声明和赋值也可以放到一起
+var myVar = "Hello";
+```
+
+- 条件分歧
+```Javascript
+var iceCream = 'chocolate';
+if(iceCream === 'chocolate') {
+  alert('Yay, I love chocolate ice cream!');    
+} else {
+  alert('Awwww, but chocolate is my favorite...');    
+}
+```
+
+- 函数   
+Javascript的函数定义使用关键字**function**，返回值使用return表示。
+```Javascript
+function multiply(num1,num2) {
+  var result = num1 * num2;
+  return result;
+}
+```
+
+- 事件(event)   
+交互式网页的核心就是可以相应各种事件。侦测用户的点击可能是最简单最常见的一种事件了：
+```Javascript
+document.querySelector('html').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
+
+// 上述写法省略了声明html对象的步骤，也可以如下展开
+var myHTML = document.querySelector('html');
+myHTML.onclick = function() {};
+```
+
+- 一个交互式网页的简单例子   
+下面这段代码抓取了网页中的图片元素，并侦测用户点击事件，在被点击时实现交换图片的效果。
+```Javascript
+var myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/firefox-icon.png') {
+      myImage.setAttribute ('src','images/firefox2.png');
+    } else {
+      myImage.setAttribute ('src','images/firefox-icon.png');
+    }
+}
+```
