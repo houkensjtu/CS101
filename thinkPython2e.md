@@ -82,4 +82,29 @@ pi = 3.1415926
 >>> from math import sqrt
 >>> sqrt(2)
 ```
-  
+ - Adding new function. (**Notice single quote mark and double quote mark are same in Python, no difference.**)
+ ```Python
+ def print_lyrics():
+    print("I want your love, and I want your revenge")
+    print("You and me could write a bad romance")
+    
+ def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
+ ```
+ 
+ - Variables and parameters are local
+ ```Python
+ # part1, part2, result are all local and cannot be access outside the function
+ def cat(part1,part2):
+    result = part1 + part2
+    print(result)
+ ```
+ 
+ - Why functions? (抽象，封装的思想)
+   - Creating a new function gives you an opportunity to name a group of statements, which makes your program easier to read and debug.
+   - Functions can make a program smaller by eliminating repetitive code.  Later, if you make a change, you only have to make it in one place.
+   - Dividing a long program into functions allows you to debug the parts one at a time and then assemble them into a working whole.
+   - Well-designed functions are often useful for many programs.  Once you write and debug one, you can reuse it.
+   
+ ### Chapter 4 : Case study: interface design
