@@ -19,6 +19,7 @@
 ## 4. Frontend / Backend
 + [Freecodecamp](https://www.freecodecamp.org/)
 + [前端基础知识拔萃](webEssence.md)
++ [Javascript基础速成 :honeybee:](onedayJS.md)
 
 ## 5. Useless curiosity
 + [The Elements of Computing Systems](https://www.amazon.com/gp/product/0262640686/ref=ppx_yo_dt_b_asin_title_o09__o00_s00?ie=UTF8&psc=1)
