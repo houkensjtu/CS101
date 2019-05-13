@@ -17,6 +17,6 @@ Same goes for the “6” in 6n^4, actually. Therefore, this function would have
 Algorithms that run at this rating include **Quick Sort, Heap Sort, and Merge Sort**. Quick Sort is the standard
 - Bubble / Insertion / Selection Sort run at O(n²). ([这个网站](http://bigocheatsheet.com/)收集了一些最常见算法的时间复杂度并可视化成了图表.)
 
-2. 
+2. [Problem Solving with Algorithms and Data Structures using Python](https://interactivepython.org/courselib/static/pythonds/index.html)
 
 3. [Algorithm - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms)
