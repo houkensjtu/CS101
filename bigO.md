@@ -51,5 +51,11 @@ Let's get right INTO IT!(又来了。。）
   
 #### Lesson 2 :laughing: : Binary search
 
- 
+1. Describing binary search
+  - The key is to **keep track of the current range** of reasonable guess.
+  - At each turn, choose a guess that **divides the range into 2 equal size parts**. Then, update the max/min bound according to the result.   
+  - For example, suppose the current range is (26,80). Take the guess as (26+80)/2=53. If the result says 53 is too high, you assign max = 53. Thus, the size of the problem is reduced to half.   
+  <img src="https://cdn.kastatic.org/ka-perseus-images/91981c0666c061815dd0e9b473ad0570a1803a45.png"></img>   
+  <img src="https://cdn.kastatic.org/ka-perseus-images/a376ce2d2746fc126293571121a818f395a97354.png"></img>
+2. 
 #### Lesson 3 :dizzy_face: : Asymptotic notation
