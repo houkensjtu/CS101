@@ -50,6 +50,11 @@ Let's get right INTO IT!(又来了。。）
   - Find problem-solving algorithm in your life.
   
 #### Lesson 2 :laughing: : Binary search
+补充一些关于binary search模型所隐含的，但是初学者可能不曾多想的模型假设：
+- 所谓binary search指的是在一个**已知**的集合中(在这里这个集合还必须是已经排序的)，寻找一个**未知**的目标。比如猜一个1-100之间的数，集合本身有多少数，有什么数都是已经知道的，但是目标数字是多少？这是需要寻找的答案。
+- 如果把情况反过来，集合是未知的，而目标数是已知的，比如我有一个数字的集合，但是我并不知道这里面有什么数字，然后我要寻找其中有没有53，此时binary search仍然可用，但是和第一种情况还是有微妙的不同。
+- 如果**集合和目标都是已知的**，那就不存在binary search的问题了。比如我知道集合是1-100的自然数，我要查找的数是53，那直接去取第53个数就是了。
+
 
 1. Describing binary search
   - The key is to **keep track of the current range** of reasonable guess.
