@@ -18,3 +18,7 @@
 根据[PyPA组织的推荐](https://packaging.python.org/guides/tool-recommendations/)，pipenv是目前从事**Python应用开发时**推荐的环境工具。
 当然这并不意味着在所有场合下你都要使用pipenv来安装包。一个典型的场景是你有时需要安装一些用Python编写的工具，比如[MyPy](https://github.com/python/mypy)
 ### Anaconda
+
+### Misc考察
+
+#### 1. 在Linux上用sudo安装Python的包有什么后果？
