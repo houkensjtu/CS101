@@ -108,3 +108,64 @@ pi = 3.1415926
    - Well-designed functions are often useful for many programs.  Once you write and debug one, you can reuse it.
    
  ### Chapter 4 : Case study: interface design
+
+ - The tutle module
+"turtle" is a module for learning software design.
+
+```Python
+# Import the turtle module
+import turtle
+
+# Turtle() method creates a turtle object
+bob = turtle.Turtle()
+
+# => <turtle.Turtle object at 0xb7bfbf> shows that bob is now a Turtle type object
+print(bob)
+
+# Turtle's movement methods:
+bob.fd(100)
+bob.lt(90)
+bob.fd(100)
+
+# Execute the movement
+turtle.mainloop()
+```
+
+ - Simple loop
+ 
+ ```Python
+ for i in range(10):
+    bob.fd(100)
+    bob.lt(100)
+ ```
+ 
+ - Small exercises
+ ```Python
+ # 1. Write a function, with a turtle t as argument. Pass bob to it.
+ def square(t):
+    for i in range(4):
+       t.lt(90)
+       t.fd(100)
+ square(bob)
+ 
+ # 2. Add length as a parameter. 
+ def square(t, len):
+     for i in range(4):
+       t.lt(90)
+       t.fd(len)
+ square(bob,100)
+ ```
+ 
+ - Encapsulation
+   - square(t) has a turtle as parameter. Calling square(bob) is the same as bob.lt()... Then why not call bob directly?
+     It's because in such a way, t can be any turtle, not just bob! **通过封装，函数隐藏了函数的实现，并且拥有一个通用的接口
+     可以让你接入任何同类型的数据进行运算.**
+ - Generalization
+   - Adding a parameter to a function is called generalization because it makes the function more general.
+   - When a function has more than a few numeric arguments, it is easy to forget what they are, or what order they should be in. In that case it is often a good idea to include the names of the parameters in the argument list:
+```Python
+# When calling the function, including the name of the parameter; has to match function definition.
+square(t=bob, len=10)
+```
+
+  - Interface design
