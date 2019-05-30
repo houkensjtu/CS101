@@ -169,3 +169,31 @@ square(t=bob, len=10)
 ```
 
   - Interface design
+     - The interface of a function is a summary of how it is used: what are the parameters? What
+  does the function do? And what is the return value? An interface is “clean” if it allows the
+  caller to do what they want without dealing with unnecessary details. 
+  **函数的接口**粗略地说就是函数的参数和返回值。所谓**简洁精炼的接口设计**，就是将且仅将用户需要的参数交给用户处理，
+  其他不需要由用户决定的参数都应该包装到函数内部。
+  
+ - Development plan
+    1.  Start by writing a small program **with no function definitions.**
+    2.  Once you get the program working, identify a coherent piece of it, **encapsulate the
+    piece in a function** and give it a name.
+    3.  **Generalize the function** by adding appropriate parameters.
+    4.  Repeat steps 1–3 until you have a set of working functions. Copy and paste working
+    code to avoid retyping (and re-debugging).
+    5.  Look for opportunities to **improve the program by refactoring.**（所谓refactor就是抽出代码中通用的部分，将其函数化，并配以适当的端口
+    且改动现有程序使得这个函数可以被接入）  For example, if you
+    have similar code in several places, consider factoring it into an appropriately general
+    function.
+ 
+  - docstring   
+    在函数定义中用三引号描述函数接口是一种良好的编程习惯。三引号字符串允许跨行。
+ ```Python
+ def square(t,len):
+    """ Draw a square with edge length = len 
+    by a turtle object t. """
+    ...
+ ```
+ 
+ ### Chapter 5 : Conditionals and recursion
