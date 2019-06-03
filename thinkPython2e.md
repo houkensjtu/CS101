@@ -197,3 +197,81 @@ square(t=bob, len=10)
  ```
  
  ### Chapter 5 : Conditionals and recursion
+
+- floor division and modulus
+  - Modulus can be used to determine if a number is divisible by another, just check a%b==0.
+```Python
+# In Python3
+>>> minutes = 105
+>>> minutes / 60
+1.75
+
+# Floor division
+>>> minutes = 105
+>>> hours = minutes//60
+>>> hours
+1
+
+# Modulus
+>>> remainder = minutes % 60
+>>> remainder
+45
+```
+
+- Boolean expressions
+  - x == y
+  - x != y
+  - x >  y
+  - x >= y
+  
+```Python
+>>> type(True)
+<class 'bool'>
+>>> type(False)
+<class 'bool'>
+```
+
+-  Logical operators
+   - There  are  three logical  operators : and, or, and not. **注意Python里是没有&&, | 这样的运算符的。**"&"表示位的and操作，"|"表示位的或操作。
+```Python
+x = True
+y = False
+
+# Output: x and y is False
+print('x and y is',x and y)
+```
+- Conditional execution   
+**Python的条件是不需要用括号的** 当然你用括号括起来也不是错误。C和Java都是严格要求用括号的，Javascript也要求，这么看来Python的外貌真的有点特立独行。。
+```Python
+if x > 0:
+   print("X is bigger than 0.")
+
+# 条件判断语句的后面至少要有一个语句，所以加一个pass作为占位是一种有用的技巧
+if x > 0:
+   pass # TO DO: add something here!
+else:
+   print("X is not bigger than 0!")
+```
+
+- Recursion   
+A function that calls itself is recursive; the process of executing it is called recursion. 这里只是引入了递归的概念，还没有具体讲解递归的各种活用。作为一个基本认识，没有base case的递归是会无限引用下去的，在Python里呼叫超过一定的深度（1000次）以后会引发RunTimeError。
+```Python
+def countdown(n):
+   if n<0:
+      print("BANG!")
+   else:
+      print(n)
+      countdown(n-1)
+```
+
+- User input   
+Python provides a built-in function called **input** that stops the program and waits for the user to type something.  When the user presses
+Return or Enter, the program resumes and input **returns what the user typed as a string.** In Python 2, the same function is called raw_input. 注意input()返回的总是一个string，如果需要数字型的话，可以用int(string)的方法将字符串转换成整数。
+```Python
+# input括号中的字符串会作为提示，出现在input之前
+>>> name = input("What is your name? ")
+What is your name?
+Arthur
+>>> name
+'Arthur'
+```
