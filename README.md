@@ -12,6 +12,7 @@
 + [GDB Cheatsheet :beetle:](gdbtips.md)
 + [The Rust programming language](https://doc.rust-lang.org/book/)
 + [Think Python 2e :hamster:](http://greenteapress.com/wp/think-python-2e/) ([学习笔记](./thinkPython2e.md))
++ [Python crash course](https://nostarch.com/pythoncrashcourse2e)([学习笔记](./pythonCrash.md))
 + [Python包管理经验总结](./pythonJam.md)
 + [Think Java](http://greenteapress.com/wp/think-java/)
 
