@@ -15,6 +15,7 @@
 + [Python crash course :dragon_face:](https://nostarch.com/pythoncrashcourse2e)([学习笔记](./pythonCrash.md))
 + [Python包管理经验总结](./pythonJam.md)
 + [Think Java](http://greenteapress.com/wp/think-java/)
++ [The Java Tutorials :mushroom:](https://docs.oracle.com/javase/tutorial/index.html)
 
 ## 3. Operating system
 + [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/) (University of Wisconsin Madison)
