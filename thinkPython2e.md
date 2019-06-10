@@ -275,3 +275,83 @@ Arthur
 >>> name
 'Arthur'
 ```
+
+### Chapter 6 : Fruitful functions
+
+- Functions with return values.
+
+```Python
+def area(radius):
+    a = math.pi * radius**2
+    return a
+
+# A more concise version
+def area(radius):
+    return math.pi * radius**2
+
+# return can be in a conditional branch
+def absolute_value(x):
+    if x < 0:
+        return -x
+    else:
+        return x
+```
+
+- Incremental development
+    -  Start with a working program and make small incremental changes. Display and check value occasionally.
+
+- Composition
+```Python
+def circle_area(xc,yc,xp,yp):
+    radius = distance(xc,yc,xp,yp)
+    result = area(radius)
+    return result
+```
+- Boolean functions
+    - Functions can return booleans, which is often convenient for hiding complicated tests inside functions.
+    - It is common to give boolean functions names that sound like yes/no questions.
+```Python
+def is_divisible(x,y):
+    if x % y == 0:
+        return True
+    else:
+        return False
+```
+- More recursion
+```Python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        recurse = factorial(n-1)
+        result = n * recurse
+        return result
+```
+- Leap of faith
+    - When  you  come  to  a function call, instead of following the flow of execution, you assume that the function works correctly and returns the right result.
+    
+```Python
+def fab(n):
+    if n == 0:
+        return 0
+    else if n == 1:
+        return 1
+    else:
+        return fab(n-1) + fab(n-2)
+```
+
+- Check for types
+    - If n is not an integer, the function above will never return because it never hit 0.
+```Python
+def fab(n):
+# This if branch is sometimes called a guardian.
+    if not isinstance(n, int):
+        print("n must be an integer!")
+        return None
+    else if n == 0:
+        return 0
+    else if n == 1:
+        return 1
+    else:
+        return fab(n-1) + fab(n-2)
+```
