@@ -62,5 +62,62 @@ Let's get right INTO IT!(又来了。。）
   - For example, suppose the current range is (26,80). Take the guess as (26+80)/2=53. If the result says 53 is too high, you assign max = 53. Thus, the size of the problem is reduced to half.   
   <img src="https://cdn.kastatic.org/ka-perseus-images/91981c0666c061815dd0e9b473ad0570a1803a45.png"></img>   
   <img src="https://cdn.kastatic.org/ka-perseus-images/a376ce2d2746fc126293571121a818f395a97354.png"></img>
-2. 
+2. Pseudocode
+  - Let min = 0 and max = n-1.
+  - Compute guess as the average of max and min, rounded down (so that it is an integer).
+  - If array[guess] equals target, then stop. You found it! Return guess.
+  - If the guess was too low, that is, array[guess] < target, then set min = guess + 1.
+  - Otherwise, the guess was too high. Set max = guess - 1.
+  - Go back to step 2.
+3. Implementation
+  - Use Javascript; other language should be equally possible.
+  - Input : an array of numbers and the target. Output : the index of the location where the value is found.
+4. Running time of binary search
+  - Every time the size of the problem will be halfed.
+  - For an array of n numbers, the number of guesses would be log2(n). (<-the worst case)
+  - log grows much slower than linear function.
+  
 #### Lesson 3 :dizzy_face: : Asymptotic notation
+
+1. What is Asymptotic notation
+- Running time of the algorithm is a function of the **size of its input**.
+- We must focus on how fast a function grows with the input size. We call this **the rate of growth of the running time.**
+- Drop the constant coefficient and lower order terms.
+  - For example, for 6n^2 + 10n + 300, We would say that **the running time of this algorithm grows as n^2.**
+- There are 3 forms of asymptotic notation: big-O, big-Omega and big-Theta
+
+2. Big-Theta notation
+```Javascript
+// Linear search example
+var doLinearSearch = function(array, targetValue) {
+  for (var guess = 0; guess < array.length; guess++) {
+    if (array[guess] === targetValue) { 
+        return guess;  // found it!
+    }
+  }
+  return -1;  // didn't find it
+};
+```
+- Each time of the for-loop, it has to do several things:
+  - compare guess with array.length
+  - compare array[guess] with targetValue
+  - possibly return the value of guess
+  - increment guess.
+- When we say that a particular running time is \Theta(n) Θ(n), we're saying that once n nn gets large enough, the running time is at least k1 * n and at most k2 * n for some constant k1 and k2.
+- When we use big-Θ notation, we're saying that we have **an asymptotically tight bound** on the running time. "Tight bound" because we've nailed the running time to **within a constant factor above and below.**
+
+3. Big-O notation (一个算法growth rate的上限)
+- It would be convenient to have a form of asymptotic notation that means "the running time grows **at most this much, but it could grow more slowly."** We use **"big-O" notation** for just such occasions.
+- We can make a stronger statement about **the worst-case running time** of binary search: it's Theta(log2(n)). But for a blanket statement that covers all cases, the strongest statement we can make is that binary search runs in O(log2(n)).
+- If we say that a running time is Theta(f(n)), then **it's also O(f(n)).**
+- Because big-O notation gives only an asymptotic upper bound, and not an asymptotically tight bound, we can make statements that at first glance seem incorrect, but are technically correct. For example, **it is absolutely correct to say that binary search runs is O(n).**
+
+4. Big-Omega notation (一个算法growth rate的下限)
+- If a running time is Omega(f(n)), then for large enough n, the running time is at least kf(n).
+- We say that the running time is "big-Omega of f(n)". **We use big-Omega notation for asymptotic lower bounds.**
+- We can also make correct, but imprecise, statements using big-Omega notation. 
+- we can correctly but imprecisely say that the worst-case running time of binary search is Omega(1), because we know that it takes at least constant time.
+
+
+
+
