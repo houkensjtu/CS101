@@ -8,6 +8,7 @@
 + [The Big-O notation :snail:](./bigO.md)
 
 ## 2. Programming language 
++ [Polyglot cheatsheet :monkey:](./polyglot.md)
 + [Linux C编程一站式学习](http://akaedu.github.io/book/index.html)
 + [GDB Cheatsheet :beetle:](gdbtips.md)
 + [The Rust programming language](https://doc.rust-lang.org/book/)
