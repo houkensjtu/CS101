@@ -77,3 +77,37 @@ source.js里就是Javascript本人了:
 // Javascript的字符串也是不区分单双引号，和Python一样
 console.log("Hello world!")
 ```
+
+### 2. 变量声明
+
+#### C
+```C
+// C的语句都是要以分号结束
+int a;
+int a, b, c;
+char d = 'c';
+float e = 1.99;
+
+// 最初C中是没有boolean型的，在C99才导入了bool；使用前先include
+#include <stdbool.h>
+
+bool b = true;
+```
+#### Java
+
+```Java
+// Java在变量声明上和C基本保持一致
+int a;
+int a, b, c;
+char d = 'c';
+float e = 1.99;
+
+// Java有内置boolean类型
+boolean b = true;
+```
+
+#### Python
+
+#### Javascript
+
+### 3. 数组和字符串
