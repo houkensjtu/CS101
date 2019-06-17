@@ -12,6 +12,8 @@
 + [Linux C编程一站式学习](http://akaedu.github.io/book/index.html)
 + [GDB Cheatsheet :beetle:](gdbtips.md)
 + [The Rust programming language](https://doc.rust-lang.org/book/)
++ [The Julia programming language express (tutorial](http://bogumilkaminski.pl/files/julia_express.pdf)
++ [Intro to Julia tutorial (video)](https://www.youtube.com/watch?v=8h8rQyEpiZA) ([学习笔记](./juliatut.md))
 + [Think Python 2e :hamster:](http://greenteapress.com/wp/think-python-2e/) ([学习笔记](./thinkPython2e.md))
 + [Python crash course :dragon_face:](https://nostarch.com/pythoncrashcourse2e)([学习笔记](./pythonCrash.md))
 + [Python包管理经验总结](./pythonJam.md)
