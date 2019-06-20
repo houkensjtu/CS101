@@ -35,3 +35,52 @@ print(messg)
 - float型 : 指数运算在python中是两个星号**
 
 - 在解释器中输入import this可以查看Then Zen of Python
+
+### 3. Introducing lists
+- List在Python中方括号定义，List中的元素不需要同类型
+- 取用List元素时也用方括号表示index，注意List的元素都是从0而不是1开始;-1代表的是List中最后一个元素。
+```Python
+motorcycles = ["honda","yamaha","suzuki"]
+```
+- List是可以动态加减的，也就是说，可以在程序运行过程中增减元素。例如，在一个游戏中你用List存储alien的个体。画面中显示的
+alien需要不断增加或者删除，这个时候就需要动态修改List的元素。
+```Python
+# 在List末尾添加元素
+motorcycle.append("ducati")
+
+# 插入元素
+motorcycle.insert(0,"ducati")
+
+# 删除一个元素
+del motorcycle[1]
+
+# 推出一个元素
+popped = motorcycle.pop()
+# pop()之后motorcycle就少了一个元素，而这个元素被保存到了popped变量中
+
+# pop也可以接收参数，推出list中任意位置的元素
+# 这里是pop出第一个元素
+popped = motorcycle.pop(0)
+
+# 移除一个特定值的元素; 注意remove只移除list中首次出现的值，如果要移除全部重复出现的元素，需要用循环来实现
+motorcycle.remove("ducati")
+```
+
+- List元素的管理与整理。
+```Python
+# sort()将list中元素进行排序，执行后car将不再保存原来的序列
+car = ["bmw","audi","toyota","subaru"]
+car.sort()
+print(car)
+
+# 逆序排列
+car.sort(reverse=True)
+
+# 暂时排序但是不修改原有list
+print( sorted(car) )
+```
+
+- List的长度,len()
+```Python
+len(car)
+```
