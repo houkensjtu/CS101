@@ -84,3 +84,52 @@ print( sorted(car) )
 ```Python
 len(car)
 ```
+
+### 4. Working with lists
+- 循环遍历List的每个元素是对List的一种普遍操作。
+```Python
+# 一个简单的遍历例子
+# 注意for循环格式，末尾要有冒号; 另外，magician只是一个暂时的变量名，可以随便取
+magicians = ["alice","david","carolina"]
+for magician in magicians:
+    print(magician)
+```
+
+- Python的for循环语句，需要一个冒号结尾，循环体则用indent来标识。
+
+- 生成数字序列用的是range这个函数（numpy里用的则是numpy.arange这个函数，生成的就是矩阵而不是List了）
+```Python
+for i in range(1,5):
+    print(i)
+# 注意这里只会打印出1,2,3,4
+```
+- **注意range()返回的并不是list，而是一个range**，可以用list(range())来将其转换成List
+```Python
+numbers = list(range(1,6))
+print(numbers)
+# [1,2,3,4,5]
+
+# range的第三个参数是调整间隔用
+evenNumbers = list(range(1,10,2))
+print(evenNumbers)
+```
+
+- 数字list可以使用min，max等简单函数来处理
+```Python
+>>> digits = [0,1,2,3,4,5]
+>>> min(digits)
+0
+>>> sum(digits)
+15
+```
+
+- **高级概念：List comprehension**
+```Python
+# 普通的生成方法
+square = []
+for i in range(1,5):
+    square.append(i**2)
+    
+# List comprehension大法，一行解决从声明，循环到添加元素
+square = [i**2 for i in range(1,5)]
+```
