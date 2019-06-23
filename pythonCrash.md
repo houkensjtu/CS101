@@ -133,3 +133,33 @@ for i in range(1,5):
 # List comprehension大法，一行解决从声明，循环到添加元素
 square = [i**2 for i in range(1,5)]
 ```
+
+- List的切片(slicing);同样用的是方括号，括号中用冒号隔开起始与终止元素。
+```Python
+# 注意这里的0:3切出的是第一，第二和第三个元素（0,1,2）
+players = ["charles", "martina", "michael", "florence", "eli"]
+print(players[0:3])
+
+# 切片也可以组合for循环使用;省略第一个元素的写法表示从0开始
+for player in players[:3]:
+    print(player)
+```
+- List的复制
+```Python
+my_foods = ["pizza", "falafel", "cake"]
+friend_foods = my_foods[:]
+# 这样就复制了一个list，从而使两个list互相独立
+
+friend_foods = my_foods
+# 这是复制了地址，这两个名字将指向同一个list
+```
+
+- 元组Tuple;定义时用括号而不是方括号，但是取元素时是一样的
+```Python
+dimensions = (200,30)
+dimensions[0]
+```
+
+- PEP8代码风格指南
+    - indent推荐使用4个空格，不使用tab
+    - 一行推荐不超过80个字符
