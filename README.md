@@ -13,7 +13,7 @@
 + [GDB Cheatsheet :beetle:](gdbtips.md)
 + [The Rust programming language](https://doc.rust-lang.org/book/)
 + [The Julia programming language express (tutorial)](http://bogumilkaminski.pl/files/julia_express.pdf)
-+ [Julia tutorial](https://www.sas.upenn.edu/~jesusfv/Chapter_HPC_8_Julia.pdf) (University of Pennsylvania)
++ [Julia tutorial](https://www.sas.upenn.edu/~jesusfv/Chapter_HPC_8_Julia.pdf) (University of Pennsylvania)([学习笔记](./learnjulia.md))
 + [Intro to Julia tutorial (video)](https://www.youtube.com/watch?v=8h8rQyEpiZA) ([学习笔记](./juliatut.md))
 + [Think Python 2e :hamster:](http://greenteapress.com/wp/think-python-2e/) ([学习笔记](./thinkPython2e.md))
 + [Python crash course :dragon_face:](https://nostarch.com/pythoncrashcourse2e)([学习笔记](./pythonCrash.md))
