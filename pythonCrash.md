@@ -163,3 +163,41 @@ dimensions[0]
 - PEP8代码风格指南
     - indent推荐使用4个空格，不使用tab
     - 一行推荐不超过80个字符
+
+### 5. If statement
+
+- Python的if语句不需要括号条件，语句后面需要加冒号，与for保持一致
+```Python
+cars = ["bmw","subaru","toyota","audi"]
+
+for car in cars:
+# 这里注意的是if文的条件，不需要用括号
+    if car == "bmw":
+        print(car.upper())
+    else:
+        print(car.title())
+ 
+ >>> BMW
+     Subaru
+     Toyota
+     Audi
+```
+
+- 复合多个逻辑条件,Python中用的是and和or关键字
+```Python
+>>> age_0 = 18
+>>> age_1 = 21
+>>> age_0 >= 22 and age_1 >= 22
+False
+```
+
+- 检查一个元素是否在list中: in关键字;反之，检查是否不在list中，用not in关键字
+```Python
+>>> requested_toppings = ["mushroom","onions","pineapple"]
+>>> "mushroom" in requested_toppings
+True
+>>> "pepperoni" in requested_toppings
+False
+>>> "pepperoni" not in requested_toppings
+True
+```
