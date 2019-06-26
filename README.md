@@ -22,15 +22,18 @@
 + [Think Java](http://greenteapress.com/wp/think-java/)
 + [The Java Tutorials :mushroom:](https://docs.oracle.com/javase/tutorial/index.html)
 
-## 3. Operating system
+## 3. Algorithm
++ [数据结构与算法（邓俊辉）](https://dsa.cs.tsinghua.edu.cn/~deng/ds/)
+
+## 4. Operating system
 + [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/) (University of Wisconsin Madison)
 
-## 4. Frontend / Backend
+## 5. Frontend / Backend
 + [Freecodecamp](https://www.freecodecamp.org/)
 + [前端基础知识拔萃](webEssence.md)
 + [Javascript基础速成 :honeybee:](onedayJS.md)
 
-## 5. Useless curiosity
+## 6. Useless curiosity
 + [The Elements of Computing Systems](https://www.amazon.com/gp/product/0262640686/ref=ppx_yo_dt_b_asin_title_o09__o00_s00?ie=UTF8&psc=1)
 + [The Annotated Turing](https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055/ref=sr_1_1?gclid=Cj0KCQjwh6XmBRDRARIsAKNInDE5YpHvwHSLqBVq0MgID2emNHctqVAiqozcSLvlO8ot-n7BPvqTTysaAt8KEALw_wcB&hvadid=241664746960&hvdev=c&hvlocphy=9006985&hvnetw=g&hvpos=1t2&hvqmt=e&hvrand=9484283836991690633&hvtargid=aud-646675774026%3Akwd-374431480720&hydadcr=16374_10302157&keywords=annotated+turing&qid=1556713924&s=gateway&sr=8-1)
 + [17 equations that changed the world :earth_africa:](https://www.amazon.com/Pursuit-Equations-That-Changed-World/dp/0465085989)([读书笔记](./equations.md))
