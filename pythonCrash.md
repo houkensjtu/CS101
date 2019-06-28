@@ -215,3 +215,43 @@ print("Your price is $" + str(price) + ".")
 ```
 
 ### 6. Dictionaries
+
+- Dictionary用花括号表示，括号中是一个一个的key-value对子。下面的例子演示了用一个dic来模型一个游戏中alien的例子。
+
+```Python
+# Key-value对子用冒号隔开
+# Key除了字符串以外其实也可以用数字，value则可以是任意的object
+alien_0 = {"color":"green", "points":5}
+print(alien_0["color"])
+print(alien_0["points"])
+
+# 向alien_0中添加属性
+alien_0["x_position"] = 0
+alien_0["y_position"] = 25
+
+# 删除元素
+del alien_0["points]
+```
+
+- Dictionary也可以用来保存多个并列的元素
+
+```Python
+favorite_languages = {
+    "jen"   : "python",
+    "sarah" : "c",
+    "edward": "ruby",
+    "phil"  : "python,
+}
+```
+
+- Dictionary元素的循环，循环方式有3种：循环key值，循环value值，或者循环所有key-value对。
+```Python
+user_0 = {
+    "username" : "efermi",
+    "first" : "enrico",
+    "last" : "fermi",
+}
+for key,value in user_0.items():
+    print("key" + key)
+    print("value" + value)
+```
