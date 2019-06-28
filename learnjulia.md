@@ -56,3 +56,12 @@ log(x)
 ```
 
 ### Section 3 : Arrays
+在Julia中矩阵是一种基本数据结构，这是Python或者Javascript都不具有的特性。
+```Julia
+# Julia中的矩阵可以携带任意不同类型的数据
+a = [ "Hello" "world";
+      1       2.3]
+
+# 数据的访问与Python中一样是用方括号（只有Matlab采用小括号）;另注意Julia中的的元素下标都是从1开始，
+a[1] #=> "Hello"
+```
