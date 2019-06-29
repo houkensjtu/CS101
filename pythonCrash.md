@@ -254,4 +254,26 @@ user_0 = {
 for key,value in user_0.items():
     print("key" + key)
     print("value" + value)
+
+for name in user_0.keys():
+    print(name.title())
+```
+- Nesting。在Dictionary中可以嵌套list，也可以在List中嵌套Dictionary
+```Python
+# Dictionary组成的List
+alien_0 = {"color":"green", "points":5}
+alien_1 = {"color":"blue", "points":15}
+alien_2 = {"color":"yellow", "points":10}
+
+aliens = [alien_0,alien_1,alien_2]
+
+for alien in aliens:
+    print(alien)
+
+# Dictionary中包含list
+
+pizza = { "crust":"thick", "toppings":["mushroom","cheese","tomato"]}
+
+for topping in pizza["toppings"]:
+    print(topping)
 ```
