@@ -18,7 +18,9 @@ pip运用时的问题（[参考链接](https://github.com/pypa/pip/issues/5599)�
 绕开的方法是不要用Linux的wrapper来启动pip即可: $ python -m pip。   
 **我当时的情况则比较特殊**，其实我也根本没有升级pip，只是在安装pipenv时，由于使用$ pip install --user pipenv安装的，
 而pipenv又依赖于pip，所以在./local/下面也有了一份pip，导致系统中有两份pip存在。
-解决的方法是，按照[pipenv文档](https://docs.python-guide.org/dev/virtualenvs/)的指导，把./local加到系统的PATH中后，系统就默认使用这个local中的pip，同样也就绕开了Linux系统的wrapper。
+解决的方法是，按照[pipenv文档](https://docs.python-guide.org/dev/virtualenvs/)的指导，把./local加到系统的PATH中后，系统就默认使用这个local中的pip，同样也就绕开了Linux系统的wrapper。   
+或者，可以在pipenv安装完成以后（此时pip自动安装了最新版本的pip），手动再用pip卸载那个最新版本的pip: $ python -m pip uninstall pip。这样pip就又
+回到了Linux包管理器刚刚安装的状态，也就不会再报错。
 
 ### virtualenv
 
