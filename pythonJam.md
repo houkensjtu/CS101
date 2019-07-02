@@ -11,7 +11,7 @@
 ### setuptools
 
 ### pip
-pip运用时的问题（[参考链接](https://github.com/pypa/pip/issues/5599)）：
+pip运用时的问题（[参考链接](https://github.com/pypa/pip/issues/5599)）([一篇相关日语Blog](https://laboradian.com/cannot-import-name-main-when-upgrading-pip/))：
 - 从Linux系统的包管理器中安装了python-pip，但是后来运行时pip提示建议自行升级，升级以后发现pip报错无法使用。原因是Linux系统的python-pip是给pip套
 上了一层wrapper，默认是仅通过Linux的包管理器来升级pip。但是用户在不知情的情况下用pip自己升级自己，导致了包管理器和pip双重管理发生了不一致。   
 理想情况是，Linux发行版会修正pip的提示信息，警告用户不要用pip自行升级pip，但是目前大多数包括Debian,Ubuntu发行版都没有做到。所以才导致用户纷纷落马。   
