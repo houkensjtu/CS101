@@ -1,7 +1,7 @@
 ## Learn Julia!
 
-> [Julia Tutorial from University of Pennsylvania](https://www.sas.upenn.edu/~jesusfv/Chapter_HPC_8_Julia.pdf)
-
+> [Julia Tutorial from University of Pennsylvania](https://www.sas.upenn.edu/~jesusfv/Chapter_HPC_8_Julia.pdf)   
+> [Julia box](https://www.juliabox.com/) <= 这里附带了一份非常棒的交互式tutorial
 ### Section 1 : Install
 - Julia遵循目前流行的软件发行模式：其核心语言和周边package模块分开，而周边package有一个专用的ecosystem进行管理。
 - 在Linux或者Windows上，Julia都可以直接从官网下载二进制运行程序。也可以通过Atom的IDE(Juno)来安装。
@@ -61,7 +61,9 @@ log(x)
 # Julia中的矩阵可以携带任意不同类型的数据
 a = [ "Hello" "world";
       1       2.3]
-
+# Vector和Matrix是两种不同的数据类型，差别只有元素间的间隔符号，非常微妙
+v = [1,2,3] # Vector
+m = [1 2 3] # Matrix
 # 数据的访问与Python中一样是用方括号（只有Matlab采用小括号）;另注意Julia中的的元素下标都是从1开始，
 a[1] #=> "Hello"
 ```
