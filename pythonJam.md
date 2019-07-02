@@ -16,8 +16,9 @@ pip运用时的问题（[参考链接](https://github.com/pypa/pip/issues/5599)�
 上了一层wrapper，默认是仅通过Linux的包管理器来升级pip。但是用户在不知情的情况下用pip自己升级自己，导致了包管理器和pip双重管理发生了不一致。   
 理想情况是，Linux发行版会修正pip的提示信息，警告用户不要用pip自行升级pip，但是目前大多数包括Debian,Ubuntu发行版都没有做到。所以才导致用户纷纷落马。   
 绕开的方法是不要用Linux的wrapper来启动pip即可: $ python -m pip。   
-我当时的情况则比较特殊，在安装pipenv时，由于使用$ pip install --user pipenv安装的，而pipenv又依赖于pip，所以在./local/下面也有了一份pip。这个
-时候把./local加到系统的PATH中后，系统就默认使用这个local中的pip，同样也就绕开了Linux系统的wrapper。
+**我当时的情况则比较特殊**，其实我也根本没有升级pip，只是在安装pipenv时，由于使用$ pip install --user pipenv安装的，
+而pipenv又依赖于pip，所以在./local/下面也有了一份pip，导致系统中有两份pip存在。
+解决的方法是，按照[pipenv文档](https://docs.python-guide.org/dev/virtualenvs/)的指导，把./local加到系统的PATH中后，系统就默认使用这个local中的pip，同样也就绕开了Linux系统的wrapper。
 
 ### virtualenv
 
