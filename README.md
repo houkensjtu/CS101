@@ -10,6 +10,7 @@
 
 ## 2. Programming language 
 + [Polyglot cheatsheet :monkey:](./polyglot.md)
++ [ZetCode](http://zetcode.com)(一个集合了很多tutorial的网站，PyQt的教程尤其好)
 + [Linux C编程一站式学习](http://akaedu.github.io/book/index.html)
 + [GDB Cheatsheet :beetle:](gdbtips.md)
 + [The Rust programming language](https://doc.rust-lang.org/book/)
@@ -19,6 +20,7 @@
 + [Think Python 2e :hamster:](http://greenteapress.com/wp/think-python-2e/) ([学习笔记](./thinkPython2e.md))
 + [Python crash course :dragon_face:](https://nostarch.com/pythoncrashcourse2e)([学习笔记](./pythonCrash.md))
 + [Python包管理经验总结](./pythonJam.md)
++ [一个非常好的Python tutorial series](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3)
 + [Think Java](http://greenteapress.com/wp/think-java/)
 + [The Java Tutorials :mushroom:](https://docs.oracle.com/javase/tutorial/index.html)
 
