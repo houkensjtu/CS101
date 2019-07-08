@@ -277,3 +277,35 @@ pizza = { "crust":"thick", "toppings":["mushroom","cheese","tomato"]}
 for topping in pizza["toppings"]:
     print(topping)
 ```
+
+### 7. User input and while loops
+
+- input()收取一个参数作为提示用户的文字，返回用户输入的字符串
+```Python
+message = input("Input something, and I will repeat it to you:")
+print(message)
+```
+
+- 将input()的返回值变成整数型可以用int()这个方法
+- Python2中也有input()这个方法，但是在Python2中input()会企图将用户输入的字符进行解释运行，而在Python2中实现输入字符串功能用的是raw_input()
+
+- 结合input和while循环可以实现不断从用户取得输入
+```Python
+message = ""
+while message != "quit":
+    message = input("Please input your words. Enter quit to quit:")
+    print(message)
+
+```
+- 用flag的概念来控制程序的while循环。大多数程序都会有一个主循环，而在运行过程中，有很多事件可以导致程序终止。如果在while的条件中测试这些
+条件会让程序显得过于冗长繁琐。比较好的做法是让while仅仅观察这个flag，而由其他部分完成flag的变化
+```Python
+active = True
+message = ""
+while active:
+    message = input("Plesae intput some words. Enter quit to quit.")
+    if message == "quit":
+        active = False
+    else:
+        print(message)
+```
