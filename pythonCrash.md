@@ -309,3 +309,77 @@ while active:
     else:
         print(message)
 ```
+
+- break和continue:break用来跳出循环（不再返回），**而continue用来跳过循环体的一部分内容（之后重新回到循环头部）**
+```Python
+
+while True:
+    city = input("Enter your favorite city. Enter quit to quit.")
+    if city == "quit":
+        break
+    else:
+        print("Your favorite city is" + city + "!")
+
+# 输出一串奇数
+for i in range(1,10):
+    if i%2==0:
+        continue
+    else:
+        print(i)
+```
+
+- 用while循环将一个list中的内容转移到另一个中的例子
+```Python
+user_list = ["Andy", "Brian", "David", "Josh"]
+verified_user = []
+
+# 这里是一个技巧，用user_list本身作为一个条件来判断，当所有元素变空时判断为否
+while user_list:
+    current_user = user_list.pop()
+    print("Verifying user:" + current_user)
+    verified_user.append(current_user)
+for user in verified_user:
+    print(user)
+
+```
+
+- while配合in使用，**表示对list中所有匹配的元素进行处理**；for配合in则是对所有元素，**不管匹配与否都进行处理**.
+```Python
+pets = ["cat","rabbit","dog","cat","cat","spider"]
+# 注意这里是用字面量“cat”，而不是像for循环中一样用一个临时变量。for是不能用这种写法的
+while "cat" in pets:
+    pets.remove("cat")
+    
+print(pets)
+```
+
+- 用while循环来填充一个dict
+```Python
+#这个片段在Jupyter中会有bug，重复显示同一个元素？？！
+response = {}
+responses= []
+active = True
+
+while active:
+    user_name = input("Enter your name:")
+    user_city = input("And what's your favourite city?")
+    response["name"] = user_name
+    response["city"] = user_city
+    responses.append(response)
+    
+    ans = input("Do you want to pass to another user? (Yes/No) :")
+    if ans == "No":
+        active = False
+# 此段代码正常
+responses= {}
+active = True
+
+while active:
+    name = input("Enter your name:")
+    responses[name] = input("And what's your favourite city?")
+    print(responses)
+    ans = input("Do you want to pass to another user? (Yes/No) :")
+    if ans == "No":
+        active = False
+print(responses)
+```
