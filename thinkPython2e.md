@@ -1,11 +1,8 @@
 ## :bird: Think Python 2e notes
 
 > How to think like a computer scientist <= 言い過ぎ
-<details>
-<summary>
-  Chapter 1 : The way of the program
-</summary>
 
+### Chapter 1 : The way of the program
 - What is a program? 
 - Running Python. (Used Python 3.4 vanilla version)
 - First program (just print("hello world"))
@@ -19,10 +16,9 @@
 ```
 - Compare natural and formal language
 - Debugging (Only introduced what is debugging; no actual debugging skill)
-</details>
 
-<details>
-  <summary> Chapter 2 : Variables, expressions and statements </summary>
+
+### Chapter 2 : Variables, expressions and statements
 
 - Assignment statemet （create a varialbe and give it a value)
 ```Python
@@ -47,7 +43,6 @@ pi = 3.1415926
   - Syntax error : Illegal expression.
   - Runtime error : Also called exceptions. Only happen when the programm running.
   - Semantic error : Logic error. The program is not doing what's supposed to be done.
-</details>  
 
  ### Chapter 3 : Functions
  
