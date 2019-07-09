@@ -370,4 +370,49 @@ def fab(n):
 >>> x = x + 1
 >>> x
 ```
-- The while statement:
+- The while statement: Example : [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
+```Python
+def collatz(number):
+    while number != 1:
+        if number % 2 == 0:
+            number = number // 2
+        elif number % 2 == 1:
+            number = number*3 + 1
+        print(number)
+
+collatz(int(input('Enter a positive integer:')))
+```
+- break : 彻底退出循环
+```Python
+# 一个迷你terminal!!
+while True:
+    line = input('> ')
+    if line == "done":
+        break
+    else:
+        print(line)
+```
+
+- Square root: newton method (**an example of an algorithm**, using while loop)
+```Python
+# 不用break的写法
+def newton_sqrt(f):
+    eps = 1.0e-10
+    guess = f/2
+    while abs(guess-f/guess)>eps:
+        guess = (guess + f/guess)/2
+    return guess
+
+# 使用break的写法
+def newton_sqrt(f):
+    eps = 1.0e-10
+    guess = f/2
+    while True:
+        if abs(guess-f/guess)>eps:
+            break
+        else:
+            guess = (guess + f/guess)/2
+    return guess
+```
+
+### Chapter 8 : Strings
