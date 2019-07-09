@@ -6,7 +6,6 @@
 + [Computer Science from A Programmer's Perspective of view (CSAPP)](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22) (Carnegie Mellon University)
 + [Computer Science: Programming with a Purpose](https://www.coursera.org/learn/cs-programming-java/) (Princeton University)
 + [Think data structure :octopus:](http://greenteapress.com/wp/think-data-structures/) (Green Tea Press)
-+ [The Big-O notation :snail:](./bigO.md)
 
 ## 2. Programming language 
 + [Polyglot cheatsheet :monkey:](./polyglot.md)
@@ -26,6 +25,8 @@
 
 ## 3. Algorithm
 + [数据结构与算法（邓俊辉）](https://dsa.cs.tsinghua.edu.cn/~deng/ds/)
++ [The Big-O notation :snail:](./bigO.md)
++ [Grokking algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=sr_1_9?keywords=Algorithm&qid=1562678577&s=gateway&sr=8-9)(一本生动易懂的算法入门书，插图多，内容偏简单)
 
 ## 4. Operating system
 + [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/) (University of Wisconsin Madison)
