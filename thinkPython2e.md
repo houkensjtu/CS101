@@ -1,8 +1,10 @@
 ## :bird: Think Python 2e notes
 
 > How to think like a computer scientist <= 言い過ぎ
-
-### Chapter 1 : The way of the program
+<details>
+<summary>
+  Chapter 1 : The way of the program
+</summary>
 
 - What is a program? 
 - Running Python. (Used Python 3.4 vanilla version)
@@ -17,8 +19,10 @@
 ```
 - Compare natural and formal language
 - Debugging (Only introduced what is debugging; no actual debugging skill)
+</details>
 
-### Chapter 2 : Variables, expressions and statements
+<details>
+  <summary> Chapter 2 : Variables, expressions and statements </summary>
 
 - Assignment statemet （create a varialbe and give it a value)
 ```Python
@@ -43,7 +47,8 @@ pi = 3.1415926
   - Syntax error : Illegal expression.
   - Runtime error : Also called exceptions. Only happen when the programm running.
   - Semantic error : Logic error. The program is not doing what's supposed to be done.
-  
+</details>  
+
  ### Chapter 3 : Functions
  
  - Making call to functions
@@ -340,7 +345,7 @@ def fab(n):
         return fab(n-1) + fab(n-2)
 ```
 
-- Check for types
+- **Guardian branch**; this is a simplified/brute force way of checking type, will introduce **rasing exception in chapter11.**
     - If n is not an integer, the function above will never return because it never hit 0.
 ```Python
 def fab(n):
@@ -355,3 +360,19 @@ def fab(n):
     else:
         return fab(n-1) + fab(n-2)
 ```
+- Debugging=> **Add print statements at the begining and the end of a function** to confirm input and output.   
+    -There is something wrong with the arguments the function is getting; a precondition is violated.   
+    -There is something wrong with the function; a postcondition is violated.   
+    -There is something wrong with the return value or the way it is being used.   
+
+
+### Chapter 7 : Iteration
+
+- Updating variables: Updating a variable by adding 1 is called an increment; subtracting 1 is called a decrement.
+```Python
+# 变量在使用前是需要初始化的
+>>> x = 0
+>>> x = x + 1
+>>> x
+```
+- The while statement:
