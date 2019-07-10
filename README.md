@@ -6,6 +6,7 @@
 + [Computer Science from A Programmer's Perspective of view (CSAPP)](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22) (Carnegie Mellon University)
 + [Computer Science: Programming with a Purpose](https://www.coursera.org/learn/cs-programming-java/) (Princeton University)
 + [Think data structure :octopus:](http://greenteapress.com/wp/think-data-structures/) (Green Tea Press)
++ [SICP Javascript version](https://sicp.comp.nus.edu.sg/)(MIT巨坑SICP的JS解释版)
 
 ## 2. Programming language 
 + [Polyglot cheatsheet :monkey:](./polyglot.md)
