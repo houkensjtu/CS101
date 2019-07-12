@@ -383,3 +383,39 @@ while active:
         active = False
 print(responses)
 ```
+
+### 8. Functions
+- function基本的结构类似循环体，使用def关键词开头，声明结尾需要冒号，函数体用indent区分。三引号表示docstring，用来描述函数作用。
+```Python
+def greet_user():
+    """ Display greeting."""
+    print("Hello!")
+
+# Passing information to function
+def greet_user(name):
+    """ Display greeting."""
+    print("Hello!" + name)
+```
+- **函数参数的指定传递**。这是个好习惯，使得代码可读性大大提高，也很有X格。。
+```Python
+def describe_pet(type,name):
+    print("I have a " + type)
+    print("His name is " + name)
+    
+# 在呼叫函数时指定参数的名字并传递，这样就算顺序颠倒结果也不会出错
+describe_pet(type = "hamster", name = "Harry")
+describe_pet(name = "Harry", type = "hamster")
+```
+
+- 参数默认值的设定。在函数定义时，可以给预计不会有太多变化的参数顺便定义默认值。
+```Python
+# 定义默认值时注意，没有默认值的参数要放在前面，这样后面呼叫时不会出差错
+def describe_pet(name, type="dog"):
+    print("I have a " + type)
+    print("His name is " + name)
+
+# 我有一只狗叫做Jimmy
+describe_pet("Jimmy")
+```
+
+- 返回值
