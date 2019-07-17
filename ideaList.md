@@ -7,6 +7,12 @@
 可以看到，在建立Personal project的过程中，选择一个有意义的课题本身就是一个很重要的课题。这里记录一些我对于Personal project的点子，如果有同学有什么
 意见或者建议都欢迎提出，同时也欢迎借鉴。
 
+### Fizzbuzz
+这是一个很常见的filtering面试题，用来看面试者是不是具有最最基础的编程常识。[这位仁兄](https://docs.google.com/presentation/d/16aTSekqJdF-WjxymEnfiNvJI-StY0deCYBWiZxhPbyI/edit#slide=id.g18aab039ee_0_94)受够了这种智商的侮辱以后，决定用Tensorflow来写一个机械学习
+版的Fizzbuzz。idea也非常简单，就是让tensorflow学习出一个function，对于input输出正确的fizz，buzz或者fizzbuzz。
+感觉这会是一个非线性的logic regression，如果可以摆脱tensorflow，写出一个barebone的版本，是不是更加有趣呢？
+
+
 ### Serial port library 
 
 ### AI data reader
