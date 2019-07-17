@@ -6,6 +6,10 @@
 所有这些东西相互功能有所重叠又有所不同，且同时存活于现在的大环境之中，着实让笔者的思维每每想到这里都犹如便秘一般，欲要一泻千里脱下裤子却发现
 动力不足。这里准备收集并整理一些有关这个话题的重要信息，希望在不久的将来可以理清这些头绪，排出体内淤积的恶臭元素。。
 
+### Cookiecutter
+[Cookiecutter](https://github.com/cookiecutter/cookiecutter)是一个用来帮助形成良好Project结构的工具（主要面向Python），项目的主页上也集成了很多现成的推荐的
+项目结构模板，非常值得借鉴参考。
+
 ### easy_install
 
 ### setuptools
