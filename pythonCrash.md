@@ -419,3 +419,55 @@ describe_pet("Jimmy")
 ```
 
 - 返回值
+```Python
+def get_formed_name(first, last):
+""" Return a full name, neatly formatted."""
+   formal = first + " " + last
+   return formal.title()
+
+musician = get_formed_name("jimi","hendrix")
+print(musician)
+```
+
+- 定义一个可选参数的函数：有时候我们希望某些参数是可选的，如果用户提供则使用，否则不使用，这可以用参数的默认值写法来实现
+
+```Python
+def get_formed_name(first, last, middle=''):
+""" Return a full name, neatly formatted."""
+   if middle:
+      formal = first + " " + middle + " " + last
+   else:
+      formal = first + " " + last
+   return formal.title()
+
+musician = get_formed_name("jimi","hendrix","lee")
+print(musician)
+```
+
+- 返回一个dict型，函数并不是只能返回单一数值，而是可以返回任何数据结构
+```Python
+def build_person(first, last, age=''):
+""" Return a full name, neatly formatted."""
+   person = {'first': first, 'last':last}
+   if age:
+      person['age'] = age
+   return person
+```
+- 用while循环反复呼叫函数
+```Python
+while True:
+    first_name = input("Please input your first name")
+    last_name = input("Please input your last name")
+    print("Hello!" + get_formal_name(first_name, last_name))
+```
+
+- 向函数传递一个list
+```Python
+def greet_users(name_list):
+    for name in name_list:
+        print("Hello!" + name)
+
+user = ["Jimmy", "Sarah", "Steve"]
+greet_users(user)
+
+``` 
