@@ -43,6 +43,7 @@
 + [The Annotated Turing](https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055/ref=sr_1_1?gclid=Cj0KCQjwh6XmBRDRARIsAKNInDE5YpHvwHSLqBVq0MgID2emNHctqVAiqozcSLvlO8ot-n7BPvqTTysaAt8KEALw_wcB&hvadid=241664746960&hvdev=c&hvlocphy=9006985&hvnetw=g&hvpos=1t2&hvqmt=e&hvrand=9484283836991690633&hvtargid=aud-646675774026%3Akwd-374431480720&hydadcr=16374_10302157&keywords=annotated+turing&qid=1556713924&s=gateway&sr=8-1)
 + [17 equations that changed the world :earth_africa:](https://www.amazon.com/Pursuit-Equations-That-Changed-World/dp/0465085989)([读书笔记](./equations.md))
 + [SpaceEmacs Rocks! 21天学习Emacs :rocket:](http://book.emacs-china.org/)
++ [Thinking spreadsheet](http://joelgrus.github.io/thinking-spreadsheet/)(一个Data scientist总结的他的Excel经验)
 + [Personal project ideas](./ideaList.md)
 
 <details>
