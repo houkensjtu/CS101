@@ -1,6 +1,6 @@
 # CS101
 > :coffee: My personal collection of computer science tutorials / MOOC / videos / books.    
-> 2019.6.25 杂感：建立此仓库有了3-4个月，内容堆积的速度正在超过可控程度，随时具有爆炸危险 :smile:
+> 2019.6.25 杂感：建立此仓库有了3-4个月，内容堆积的速度正在超过可控程度，随时具有爆炸危险 :smile:   
 > 2019.7.16 悲报：申请Recurse Center的mini batch本来自信满满以为自己的plan很完美，没想到直接书面就被刷了。。
 
 ## 1. Computer science basics
