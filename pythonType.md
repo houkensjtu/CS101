@@ -95,6 +95,12 @@ def mystery_combine(a:str, b:str, times:int)->str:
 ```
 代码的意图和调用方法在你看到代码的时候就明确了很多，甚至这样的注释比用语言写comment更加有效简洁。
 
+### 3. IDE的补全功能
+没有型注释的时候，IDE对变量的类型没有任何概念，这使得代码补全有时候无法很好的工作。就比如上面的a和b，如果添加了型注释，
+IDE就可以知道这些是str类型的变量，从而在你输入"a."的瞬间，提示你str类型可以用的方法有哪些。这算是一个比较小的点，
+但是也是型注释的好处之一。
+
+
 参考文章：
 - [How to Use Static Type Checking in Python 3.6](https://medium.com/@ageitgey/learn-how-to-use-static-type-checking-in-python-3-6-in-10-minutes-12c86d72677b)
 - [Using Python's Type Annotations](https://dev.to/dstarner/using-pythons-type-annotations-4cfe)
