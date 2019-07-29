@@ -384,7 +384,7 @@ while active:
 print(responses)
 ```
 
-### 8. Functions
+### 8. Functions (1)
 - function基本的结构类似循环体，使用def关键词开头，声明结尾需要冒号，函数体用indent区分。三引号表示docstring，用来描述函数作用。
 ```Python
 def greet_user():
@@ -471,3 +471,107 @@ user = ["Jimmy", "Sarah", "Steve"]
 greet_users(user)
 
 ``` 
+
+- 向函数传递一个list，并做一些相应的处理。这里的例子是，假设我们有一个等待处理的模型列表，我们希望每次弹出一个模型，打印他的名字，然后保存到完成列表中
+- 下面这个例子演示了几个概念：首先，使用函数使得代码复用变得容易，有了函数以后处理不同列表只需重复呼叫同一个函数即可;另外，函数的功能应该相对单一，
+一个函数只完成一个特定目标
+
+```Python
+def print_model(model_list, completed_models):
+    while model_list:
+        current = model_list.pop()
+        print("The current model is " + current)
+        completed_models.append(current)
+ def display(completed_models):
+     for model in completed_models:
+         print(model)
+         
+model_list = ["Pikachu", "Soma", "Hikaru"]
+completed_models = []
+print_model(model_list, completed_models)
+display(completed_models)
+```
+
+
+
+### 8. Functions (2)
+
+- 向函数传递任意个数的参数;这里星号意味着参数是一个不定长度的tuple。
+```Python
+def makePizza(*toppings):
+    for topping in toppings:
+        print("Added a " + topping)
+        
+```
+- 比如说我们要写一个乘法函数，如何定义一个可以接受不定个数的数字并将他们全部相乘的函数呢？
+
+```Python
+# 不用星号的话，只能这样写
+def multi(x,y)
+    return x*y
+
+# 这样的话就可以传递不定个数的参数了
+def multi(*args):
+    n = 1
+    for i in args:
+        n *= i
+    return n
+
+```
+
+- 两个星号的作用是接受一个dict，其用法和一个星号类似
+
+```Python
+def user_profile(**kwargs):
+    for key, value in kwargs.items():
+        print("Key:" + key)
+        print("Value:" + value)
+        
+# 呼叫这个函数的时候，key的传递方法
+user_profile(key1="xxx", key2="yyy")
+
+# 注意这里的key是不需要加引号的，用起来的感觉就像指定名字的参数，和dict['key']的取法是两回事
+```
+
+- 把制作好的函数存放到module里：在Python里，**文件名就是module名，可以import**
+```Python
+# pizza.py
+def make_pizza(*toppings):
+    for topping in toppings:
+        print("Adding " + topping)
+    print("Finished")
+
+# main.py
+import pizza
+
+pizza.make_pizza("mushroom","cheese","tomato")
+```
+
+- 从module导入某个特定函数
+```Python
+from pizza import make_pizza
+make_pizza(...)
+
+# 缩写格式
+from pizza import make_pizza as mp
+mp(...)
+
+# 或者缩写module名字
+import pizza as p
+p.make_pizza(...)
+```
+
+- from module import * 的写法是不推荐的，因为会引入你并不知道的函数，可能和现有的函数冲突
+
+- 函数编写风格的一些规定
+```Python
+# 写参数的默认值不要用空格
+def func(value=1, arg="hello"):
+    print(arg)
+
+# 参数过多时，用换行来整理格式，行首用2个tab或者8空格
+def longPar(
+        parameter1="a", parameter2="b",
+        parameter3="c", parameter4="d"):
+        print(...)
+```
