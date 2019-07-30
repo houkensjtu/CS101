@@ -575,3 +575,26 @@ def longPar(
         parameter3="c", parameter4="d"):
         print(...)
 ```
+
+
+### 9. Class
+
+- 创建class的方法;括号中是表示继承的父类。在Python2版本中，所有类都需要继承object类，但是目前在Python3中已经不需要
+
+```Python
+class Dog():
+    def __init__(self, name, age):
+        self.name = name
+        self.age  = age
+    
+    def sit(self):
+        print(self.name.title() + " is now sitting.")
+     
+    def roll(self):
+        print(self.name.title() + " is now rolling.")
+        
+my_dog = Dog("Willie",6)
+```
+
+- 注意到__init__方法的参数中，除了name和age以外，还包括了self。self是表示对象本身，意味方法可以访问对象本身内部的所有内容.
+- 另外，__init__这个方法虽然没有写return语句，但是Python会自动返回一个对象，所以可以把初始化的对象传递给一个名字
