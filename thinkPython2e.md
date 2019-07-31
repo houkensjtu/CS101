@@ -416,3 +416,47 @@ def newton_sqrt(f):
 ```
 
 ### Chapter 8 : Strings
+
+- string is a sequence of characters.
+```Python
+>>> fruit  = 'banana'
+>>> letter = fruit[1]
+# -> 'a'
+```
+- strings can be sliced, like a list; but **string is immutable.**
+```Python
+fruit[:2]
+fruit[0] = 'c'
+#-> Error
+```
+
+- search a letter in a string; this is a **reverse** of the [] operator! There is also a built-in find() method in Python
+```Python
+def find(word,letter):
+    index = 0
+    while index < len(word):
+        if word[index] == letter:
+            return index
+        index = index + 1
+    return -1
+```
+
+- string's built-in methods.
+```Python
+# Return length
+>>> fruit.len()
+
+# Case change
+>>> fruit.upper()
+
+# Find letter
+>>> fruit.find('a')
+#-> Return the index of the letter if found; return -1 if not.
+
+# In operator
+>>> 'a' in fruit
+#-> True
+```
+
+- Debugging: when using slices of string, it might be confusing because the handling of index sometimes include/exclude a letter.
+You can **insert print statement to confirm the current index before where Errors** (For example, "IndexError: string index out of range" come out)
