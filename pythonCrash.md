@@ -647,3 +647,15 @@ class Car():
 
 - 直接修改属性很方便，**但是让用户直接修改属性是有risk的**，比如说，有用户在增加一定的mile之后，又设置其属性归0,而实际mile是只增不减，
 这样**逻辑错误**就产生了
+
+- 类属性(class attribute)和对象属性的问题
+```Python
+# 如下所示，在Class定义下面写的属性属于类，故所有对象都会拥有这个相同属性
+# 在__init__里的属性就属于对象属性，每个对象可以有不同的属性值
+Class Car():
+    class_attribute = 0.0
+    def __init__():
+        ins_attribute = 1.0
+    def update(self):
+        self.ins_attribute = 10.0
+```
