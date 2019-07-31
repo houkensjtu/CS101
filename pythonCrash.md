@@ -598,3 +598,52 @@ my_dog = Dog("Willie",6)
 
 - 注意到__init__方法的参数中，除了name和age以外，还包括了self。self是表示对象本身，意味方法可以访问对象本身内部的所有内容.
 - 另外，__init__这个方法虽然没有写return语句，但是Python会自动返回一个对象，所以可以把初始化的对象传递给一个名字
+
+- 下面看一个修改class的属性的例子;修改属性共有几种方法
+  - 直接通过对象访问属性，并设置其值
+  - 通过method来修改属性
+  - 通过method来increment
+
+```Python
+class Car():
+    def __init__(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer = 0.0
+        
+    # 这里注意，虽然get_name并不需要参数，但是还是要传入self    
+    def get_name(self):
+        long_name = str(self.year) + " " + self.make + self.model
+        return long_name.title()
+        
+    def read_meter(self):
+        print("This car has " + str(self.odometer) + "miles on it.")
+        
+    # 用来修改属性的method    
+    def update_odometer(self,mileage):
+        self.odometer = mileage
+        
+    # 用来增加属性值的方法，本质和上面一样
+    def increment_odometer(self,mile):
+        self.odometer += mile
+ 
+ car = Car("Audi","A4",2019)
+ print(car.get_name())
+ #=> 2019 Audi A4
+ 
+ car.read_meter()
+ #-> This car has 0.0 miles on it.
+ 
+ # 直接修改属性
+ car.odometer = 23
+ 
+ # 通过method来修改属性
+ car.update_odometer(23)
+ 
+ # 通过mehod来增加
+ car.increment_odometer(10)
+```
+
+- 直接修改属性很方便，**但是让用户直接修改属性是有risk的**，比如说，有用户在增加一定的mile之后，又设置其属性归0,而实际mile是只增不减，
+这样**逻辑错误**就产生了
