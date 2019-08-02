@@ -659,3 +659,14 @@ Class Car():
     def update(self):
         self.ins_attribute = 10.0
 ```
+- Inheritance 继承;定义中用括号表示父类，另外在__init__里要用super()来呼唤父类;
+- 在子类中可以新定义新的属性和方法，也可以override父类中的方法，只要用同样的函数名字即可
+```Python
+ElectricCar(Car):
+    def __init__(self,make,model,year):
+        super().__init__(make,model,year)
+        self.battery_size = 70
+        
+Tesla = ElectricCar("Tesla","Model S",2016)
+print(Tesla.get_name())
+```
