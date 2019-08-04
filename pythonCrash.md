@@ -670,3 +670,35 @@ ElectricCar(Car):
 Tesla = ElectricCar("Tesla","Model S",2016)
 print(Tesla.get_name())
 ```
+
+- importing class. 为了更好的整理文件，可以把比较大的类单独做成一个文件module。比如上面的Car这个类，可以存放到car.py
+```Python
+# car.py
+class Car():
+    """ A simple attempt to model a car. """
+    def __init(self,make,model,year):
+        self.make = make
+        self.model = model
+        self.year = year
+        
+# my_car.py
+from car import Car
+
+my_new_car = Car("Audi","A4",2016)
+...
+```
+- 老生常谈import的一些方法比较
+```Python
+# 普通的import，可以逗号隔开import多个类
+from car import Car, ElectricalCar
+
+# 引入整个module，在调用时需要前缀module名字
+import car
+
+my_new_car = car.Car("BMW","BX",2019)
+
+# 不推荐wildcard引用，理由有很多，有可能导入你不知道的method与自己代码重叠
+# 另外，第三者阅读代码时，光看这个语句不知道作者的意图是要导入什么，影响代码可读性
+from car import *
+
+```
