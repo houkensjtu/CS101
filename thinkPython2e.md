@@ -460,3 +460,61 @@ def find(word,letter):
 
 - Debugging: when using slices of string, it might be confusing because the handling of index sometimes include/exclude a letter.
 You can **insert print statement to confirm the current index before where Errors** (For example, "IndexError: string index out of range" come out)
+
+### Chapter 9 : Case study 2: word play
+- 这章主要是一些和文字游戏有关的练习，主题是search(在一个词语中寻找存在或者不存在某些关键字），这里仅仅举一个例子
+```Python
+# 这个文件是作者给出的一个英语常用词汇列表
+f = open("word.txt")
+def print_not_e(word):
+    if 'e' in word:
+        return False
+    return True
+    
+# 或者可以不借助in关键词
+# 这个文件是作者给出的一个英语常用词汇列表
+f = open("word.txt")
+def print_not_e(word):
+    for letter in word:
+        if letter == 'e':
+            return False
+    return True
+```
+- 文中还给出了一些应用递归的例子，此处递归的应用方法非常基础，也很值得玩味
+```Python
+def is_abecedarian(word):
+    if len(word) <= 1:
+         return True
+    if word[0] > word[1]:
+         return False
+    return is_abecedarian(word[1:])
+ ```
+ 
+### Chapter 10 : List
+- a list is a sequence of values
+```Python
+>>> cheese = ['cheddar', 'provolone', 'american']
+>>> num = [1,2,3]
+>>> empty = []
+```
+- lists are mutable.**list的内容是可以修改的，tuple或者string则是不可修改的**
+
+- Traversing a list
+```Python
+for i in num:
+    print(i)
+```
+- List operations
+```Python
+# 乘法表示重复一个List
+>>> a = [0] * 3
+[0,0,0]
+>>> [1,2,3] * 3
+[1,2,3,1,2,3,1,2,3]
+
+# 加法表示连接两个list
+>>> [1,2,3] + [4,5,6]
+[1,2,3,4,5,6]
+
+
+```
