@@ -515,6 +515,78 @@ for i in num:
 # 加法表示连接两个list
 >>> [1,2,3] + [4,5,6]
 [1,2,3,4,5,6]
-
-
 ```
+- Slicing list: **If you omit the first index, the slice starts at the beginning. If you omit the second, the slice goes to the end. So if you omit both, the slice is a copy of the whole list**
+```Python
+>>> t = ['a','b','c','d','e','f']
+>>> t[1:3]
+['b','c']
+>>> t[:]
+['a','b','c','d','e','f']
+```
+
+- **Map, filter and reduce**
+```Python
+# Reduce: 把一串数字降维到一个数字
+def my_sum(num):
+    total = 0
+    for i in num:
+        total += i
+    return total
+# Built-in sum
+total = sum(num)
+
+# Map: 把一个list通过一定规则映射到另一个list
+def capital(s):
+    des = []
+    for letter in s:
+        des.append(letter.capitalize())
+    return des
+
+# Filtering
+def only_upper(s):
+    des = []
+    for letter in s:
+        if letter.isupper():
+            des.append(letter)
+    return des
+```
+
+- Remove elements
+```Python
+# Remove a value and save this value
+>>> b = a.pop(0)
+
+# Delete the value without saving
+# The "del" command is very unique
+>>> del a[0]
+
+# Remove multiple values
+>>> del a[1:3]
+
+# Remove a certain value
+>>> a.remove('a')
+```
+
+- Call by reference problem
+```Python
+# This won't delete the first element, l will still be the same
+def bad_delete(l):
+    l = l[1:0]
+    
+# Imagine, calling bad_delete
+>>> bad_delete(l1)
+# This equal to 
+l = l1[1:0]
+# But l1 is still l1.
+```
+
+- List method debugging tips
+  - List method usually returns None. t = t.sort() won't work!
+  - There are multiple ways to do the same thing.
+  ```Python
+  a = ['a','b','c','d']
+  a.append('e')
+  a += ['e']
+  
+  ```
