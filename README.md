@@ -24,6 +24,7 @@
 + [一个非常好的Python tutorial series](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3)
 + [Think Java](http://greenteapress.com/wp/think-java/)
 + [The Java Tutorials :mushroom:](https://docs.oracle.com/javase/tutorial/index.html)
++ [网道Javascript教程](https://wangdoc.com/javascript/)
 
 ## 3. Algorithm
 + [数据结构与算法（邓俊辉）](https://dsa.cs.tsinghua.edu.cn/~deng/ds/)
