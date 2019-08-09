@@ -69,3 +69,9 @@ hack和学习活动。整个组织并没有明确的课程和目标，所有的�
 1. 代码更新太快，如果写成书籍，很快就会和代码本身发生不一致导致问题产生。
 2. 单纯因为软件教育界还没有进化到这个阶段，因为Github这个服务本身的成熟也是近几年的事，如何结合Github这样的平台撰写代码解释，估计还很少有人尝试
 
+### Life game
+最早是在Github看到一个开发者写的一个非常短的[自娱自乐的程序](https://github.com/tfcat/Life)，后来稍稍仔细阅读发现图中的生命扩散其实是一种
+有名的[模拟算法](https://robertheaton.com/2018/07/20/project-2-game-of-life/)，算法本身非常简单，但是结合了数据结构和图形显示，是一个
+挺酷的idea。原作者是用Python在命令行下写了一个程序，而Github这位把它拓展到了SDL上用C语言撰写，由此拓展其实可以用pygame，或者Javascript都应该
+可以很容易地实现，并赋予更加丰富的变化。
+变化之一，比如可以赋予生命一些颜色，用一些自己发明的算法给出一个RGB值即可。另外，是不是可以结合声音，比如Mary Cook演示的[drum machine](http://drum-machine.maryrosecook.com/)，就是利用Javascript的简单API来赋予程序一点音乐要素。
