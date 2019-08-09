@@ -43,6 +43,7 @@
 + [17 equations that changed the world :earth_africa:](https://www.amazon.com/Pursuit-Equations-That-Changed-World/dp/0465085989)([读书笔记](./equations.md))
 + [Thinking spreadsheet](http://joelgrus.github.io/thinking-spreadsheet/)(一个Data scientist总结的他的Excel经验)
 + [Personal project ideas](./ideaList.md)
++ [李宏毅机器学习系列笔记](https://datawhalechina.github.io/leeml-notes/#/)
 
 ## 7. 豆知識
 + [Python type hint :melon:](./pythonType.md)
