@@ -8,6 +8,7 @@
 + [Computer Science: Programming with a Purpose](https://www.coursera.org/learn/cs-programming-java/) (Princeton University)
 + [Think data structure :octopus:](http://greenteapress.com/wp/think-data-structures/) (Green Tea Press)
 + [SICP Javascript version](https://sicp.comp.nus.edu.sg/)(MIT巨坑SICP的JS解释版)
++ [Bithacks](https://graphics.stanford.edu/~seander/bithacks.html)(一个Stanford的PhD总结的)
 
 ## 2. Programming language 
 + [Polyglot cheatsheet :monkey:](./polyglot.md)
