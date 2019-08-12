@@ -702,3 +702,46 @@ my_new_car = car.Car("BMW","BX",2019)
 from car import *
 
 ```
+
+### 10. Files and exceptions
+
+- 打开文件用open()函数，这个函数**不需要import**。另外，open函数经常与with语句共用，使得程序更简洁。
+另外，with语句会在block结束后负责关闭文件。否则，你需要先open()一个文件，然后再close()。在写程序的过程中老是需要记住close()是比较麻烦的，
+因此有了with这个用法。
+
+```Python
+with open("pi.txt") as file_object:
+    # 这样会打印出文件所有内容
+    contents = file_object.read()
+    print(contents)
+    
+    # 这样可以一行一行输出文件内容
+    for line in file_object:
+        print(line)
+```
+- 把文件的内容一行一行存入一个list的方法readlines()，也就是说readlines()返回的是一个list。rstrip()这个方法是除去多余的换行。
+```Python
+with open("file.txt") as file_object:
+    lines = file_object.readlines()
+    
+for line in lines:
+    print(line.rstrip())
+```
+
+- 作为一个简单的处理文件数据例子，作者给出一个问题，你的生日有没有出现在pi的前100万位中？
+```Python
+with open("pi.txt") as file_object:
+    lines = file_object.readlines()
+    
+pi_string = ''
+for line in lines:
+    pi_string += line.strip()
+    
+birthday = input("Enter your birthday:")
+
+if birthday in pi_string:
+    print("Your birthday appeared in pi!")
+else:
+    print("Your birthday didn't show up in pi!")
+
+```
