@@ -12,19 +12,27 @@
 
 ## 2. Programming language 
 + [Polyglot cheatsheet :monkey:](./polyglot.md)
++ [Programming projects for advanced beginners](https://robertheaton.com/2018/12/08/programming-projects-for-advanced-beginners/)
+#### Python
 + [ZetCode](http://zetcode.com)(一个集合了很多tutorial的网站，PyQt的教程尤其好)
++ [Learn PyQt](https://www.learnpyqt.com/)(一个荷兰的开发者写的教程系列)
++ [Think Python 2e :hamster:](http://greenteapress.com/wp/think-python-2e/) ([学习笔记](./thinkPython2e.md))
++ [Python crash course :dragon_face:](https://nostarch.com/pythoncrashcourse2e)([学习笔记](./pythonCrash.md))
++ [一个非常好的Python tutorial series](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3)
+#### C/C++
 + [Linux C编程一站式学习](http://akaedu.github.io/book/index.html)
 + [GDB Cheatsheet :beetle:](gdbtips.md)
+#### Java
++ [Think Java](http://greenteapress.com/wp/think-java/)
++ [The Java Tutorials :mushroom:](https://docs.oracle.com/javase/tutorial/index.html)
+#### Javascript
++ [网道Javascript教程](https://wangdoc.com/javascript/)
+#### Others
 + [The Rust programming language](https://doc.rust-lang.org/book/)
 + [The Julia programming language express (tutorial)](http://bogumilkaminski.pl/files/julia_express.pdf)
 + [Julia tutorial](https://www.sas.upenn.edu/~jesusfv/Chapter_HPC_8_Julia.pdf) (University of Pennsylvania)([学习笔记](./learnjulia.md))
 + [Intro to Julia tutorial (video)](https://www.youtube.com/watch?v=8h8rQyEpiZA) ([学习笔记](./juliatut.md))
-+ [Think Python 2e :hamster:](http://greenteapress.com/wp/think-python-2e/) ([学习笔记](./thinkPython2e.md))
-+ [Python crash course :dragon_face:](https://nostarch.com/pythoncrashcourse2e)([学习笔记](./pythonCrash.md))
-+ [一个非常好的Python tutorial series](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-python-3)
-+ [Think Java](http://greenteapress.com/wp/think-java/)
-+ [The Java Tutorials :mushroom:](https://docs.oracle.com/javase/tutorial/index.html)
-+ [网道Javascript教程](https://wangdoc.com/javascript/)
+
 
 ## 3. Algorithm
 + [数据结构与算法（邓俊辉）](https://dsa.cs.tsinghua.edu.cn/~deng/ds/)
