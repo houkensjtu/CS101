@@ -745,3 +745,25 @@ else:
     print("Your birthday didn't show up in pi!")
 
 ```
+
+- 写入文件：用的还是open函数，只是后面要加一个写入的参数设定;备注**Python只能写入string数据，所以你要写入数字的时候，也必须通过str()方法把数字转换成字符才可以**
+```Python
+# 注意这里open()里的参数w
+with open("data.txt",w) as file_object:
+    file.object.write("I love programming!")
+    
+    # 另外，写入的时候如果不表明换行，Python是不会自动换行的
+    file.object.write("Hello, \n")
+    file.object.write("World! \n")
+    
+```
+
+- Exceptions 例外的处理。Python中用try-except块来处理例外的发生。例外处理的好处是，程序即便遇到error也不会退出，而可以继续运行。
+等于是你预见并处理了错误，这和不处理错误是不同的。（虽然结果都是有错误）
+```Python
+try:
+    a = 5/0
+except ZeroDivisionError:
+    print(a)
+
+```
