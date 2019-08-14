@@ -61,8 +61,8 @@
 + [Python包管理经验总结](./pythonJam.md)
 
 ## 8. Skilled programmers
-+[David Beazley](https://www.dabeaz.com/index.html)(Python cookbook的作者，在Chicago开设小班课；另外也有很多talk和live coding公布)
-+[Joel Grus](https://joelgrus.com/)(Data science from scratch作者，live coding的视频非常棒)
++ [David Beazley](https://www.dabeaz.com/index.html)(Python cookbook的作者，在Chicago开设小班课；另外也有很多talk和live coding公布)
++ [Joel Grus](https://joelgrus.com/)(Data science from scratch作者，live coding的视频非常棒)
 <details>
 <summary>
 Code reading
