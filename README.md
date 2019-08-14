@@ -9,6 +9,8 @@
 + [Think data structure :octopus:](http://greenteapress.com/wp/think-data-structures/) (Green Tea Press)
 + [SICP Javascript version](https://sicp.comp.nus.edu.sg/)(MIT巨坑SICP的JS解释版)
 + [Bithacks](https://graphics.stanford.edu/~seander/bithacks.html)(一个Stanford的PhD总结的)
++ [Berkeley CS 61a: SICP in Python](https://cs61a.org/)
++ [Berkeley CS 61b: Data structure in Java](https://sp19.datastructur.es/index.html)
 
 ## 2. Programming language 
 + [Polyglot cheatsheet :monkey:](./polyglot.md)
