@@ -767,3 +767,40 @@ except ZeroDivisionError:
     print(a)
 
 ```
+- 信息存储：json是一种为Javascript开发的文件格式，但是由于其用途广泛，在Python中也有相应的模块
+```Python
+import json
+
+# 写入数据
+data = {"name":"brian", "age":19}
+with open("data.json",'w') as file_object:
+    json.dump(data, file_object)
+
+# 读出数据
+with open("data.json") as file_object:
+    readdata = json.load(file_object)
+
+print(readdata)
+```
+
+- 下面这个例子演示了如何提示用户输入一个名字，存入json文件，然后再从文件中读取这个数据
+```Python
+import json
+
+filename = "name.json"
+
+user_name = input("Enter your name here:")
+
+with open(filename,'w') as file_object:
+    json.dump(user_name, file_object)
+    
+with open(filename) as file_object:
+    name = json.load(file_object)
+    
+print(name)
+
+```
+
+- 代码重构：一个函数通常应该有一个单一固定的功能，避免多种功能混用。当发现一段代码的功能较为复杂时，应该尽量拆分。
+
+### 11. Testing your code
