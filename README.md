@@ -58,6 +58,7 @@
 + [Thinking spreadsheet](http://joelgrus.github.io/thinking-spreadsheet/)(一个Data scientist总结的他的Excel经验)
 + [Personal project ideas 个人项目创意 :bamboo:](./ideaList.md)
 + [李宏毅机器学习系列笔记](https://datawhalechina.github.io/leeml-notes/#/)
++ [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook#%E6%9C%AC%E6%9B%B8%E3%81%AE%E8%A1%A8%E8%A8%98%E6%B3%95)
 
 ## 7. 豆知識
 + [Python type hint :melon:](./pythonType.md)
