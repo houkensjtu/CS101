@@ -2,6 +2,7 @@
 > :coffee: My personal collection of computer science tutorials / MOOC / videos / books.    
 > 2019.6.25 杂感：建立此仓库有了3-4个月，内容堆积的速度正在超过可控程度，随时具有爆炸危险 :smile:   
 > 2019.7.16 悲报：申请Recurse Center的mini batch本来自信满满以为自己的plan很完美，没想到直接书面就被刷了。。
+> 2019.9.30 更新：最近因为发现Gitbook更加美观好用，逐渐把CS基础学习的笔记转移到了[Gitbook](https://personal-notes.gitbook.io/interviewprep/)上，这里的话作为资料收集的场所，日常更新将减少
 
 ## 1. Computer science basics
 + [Computer Science from A Programmer's Perspective of view (CSAPP)](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22) (Carnegie Mellon University)
