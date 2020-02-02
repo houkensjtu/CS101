@@ -7,13 +7,31 @@
 可以看到，在建立Personal project的过程中，选择一个有意义的课题本身就是一个很重要的课题。这里记录一些我对于Personal project的点子，如果有同学有什么
 意见或者建议都欢迎提出，同时也欢迎借鉴。
 
+
+### 人工智能求解流体传热现象
+在CMU有一个研究组正在进行一些使用人工智能来模拟物理现象的[研究](https://sites.google.com/view/barati/research)。其主要思想是，以往的物理数值模拟都是对物理量先建立数学模型（通常是微分方程），然后通过离散化并求解这些微分方程来得到物理量的解。而这个小组则让人工智能模型去“学习”已有的物理现象结果（可以是实验得到的测量，也可以是先前数值计算得到的结果），然后在并不知道物理现象背后的微分方程的情况下，自动生成合理的结果。这种方法的优点是在物理现象比较复杂难以建模时仍然可以通过学习现有结果来模拟新的模型，同时计算速度相对于迭代求解微分方程可能有一定提高。
+
+具体方法在他们的[论文](https://arxiv.org/pdf/1709.02432.pdf)中有粗略解释，有趣的是据作者介绍这个方法本来来自一些用来转换图像数据的神经网络模型（P. Isola, J.-Y. Zhu, T. Zhou, and A. A. Efros, arXiv preprint arXiv:1611.07004 (2016).）。
+
+这个模型大致的运作是像这样的，首先有一个生成器G，用来基于现有的实验数据来生成一些新的模拟结果，然后有一个比较器D，用来比较生成的结果和真实的结果直接是否有足够大的差别。在论文中作者是这样描述的：
+> The generator G and discrimator D models are
+convolutional neural networks, adapted from Ref. 23. The generator G uses a ”U-Net”-based
+network architecture24 and the discriminator D uses a convolutional ”PatchGAN” classifier
+architecture.
+
+具体上面的这些文献还没有阅读，所以不是很清楚U-Net还有PatchGAN这些具体是怎样的技术。
+
+初步阅读以后感觉他们的研究还处在初级阶段，结果中展示出来的还是一些比较简单的，稳态的计算结果对比。我在过往的学习工作中接触到过一些相对复杂的流动现象，比如两相流动，压缩气体的流动等等，在求解过程中也实际遇到过很多问题，不知道是不是可以用这个方法来寻求一些突破？我也有想法联系这个教授看看是不是有读在职博士，或者甚至脱产博士的机会。
+
+
 ### Fizzbuzz
 这是一个很常见的filtering面试题，用来看面试者是不是具有最最基础的编程常识。[这位仁兄](https://docs.google.com/presentation/d/16aTSekqJdF-WjxymEnfiNvJI-StY0deCYBWiZxhPbyI/edit#slide=id.g18aab039ee_0_94)受够了这种智商的侮辱以后，决定用Tensorflow来写一个机械学习
 版的Fizzbuzz。idea也非常简单，就是让tensorflow学习出一个function，对于input输出正确的fizz，buzz或者fizzbuzz。
 感觉这会是一个非线性的logic regression，如果可以摆脱tensorflow，写出一个barebone的版本，是不是更加有趣呢？
 
 
-### Serial port library 
+### 音频接口数据传输
+音频的接口也是一个interface，可以用来写出一定的电压数据，是否可以自行制作一个利用这个接口来传输数据的驱动程序，从而绕过通常的USB这些接口，来实现一些简单低速的数据交换呢？
 
 ### AI data reader
 在做物理实验的过程中，往往需要记录各种仪器的读数。有些仪器具有remote control端口，可以实现用电脑监控读数的功能，但是有些仪器不具有这些功能，
@@ -37,7 +55,7 @@ Windows目前自带的文件浏览器，只能打开一个窗口且没有tab功�
 有浏览器就可以运行，大大提高了程序的可推广程度。    
 另外，编写插件也是很好的一个练习类似前端开发的机会。
 
-### Recurse center
+### Recurse center活动申请
 [Recurse center](https://www.recurse.com/)是一个坐落于NYC的Brooklyn的程序员活动组织，前身称为The hacker school。Recurse center召集来自全世界的程序员，在一起自发地进行
 hack和学习活动。整个组织并没有明确的课程和目标，所有的过程都是由参加者自行发起。目前，加入Recurse center需要[申请面试](https://www.recurse.com/apply)。Recurse center声称他们
 看重[申请人如下的特质](https://www.recurse.com/what-we-look-for)：
