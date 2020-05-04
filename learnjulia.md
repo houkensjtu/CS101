@@ -1,31 +1,40 @@
-## Learn Julia!
+# Learn Julia!
 
-> [Julia Tutorial from University of Pennsylvania](https://www.sas.upenn.edu/~jesusfv/Chapter_HPC_8_Julia.pdf)   
-> [Julia box](https://www.juliabox.com/) <= 这里附带了一份非常棒的交互式tutorial
-### Section 1 : Install
-- Julia遵循目前流行的软件发行模式：其核心语言和周边package模块分开，而周边package有一个专用的ecosystem进行管理。
-- 在Linux或者Windows上，Julia都可以直接从官网下载二进制运行程序。也可以通过Atom的IDE(Juno)来安装。
-- 在Julia的REPL中，键盘的]键代表进入pkg管理模式，;代表进入系统shell模式
-    - 在pkg管理模式
-        - st : 显示当前所有的包包的状态
-        - add xxx : 导入一个新的包包
-        - rm xxx : 删除一个包包
-        - up xxx : 更新一个包包
-     - 安装包包后退出到正常的REPL中，使用using xxx命令来使用这个包包。初次引用会需要一些时间来编译处理这个包包。
-     - 安装Julia notebook的简单流程：
-         - 在pkg管理模式中add IJulia
-         - 在REPL中using IJulia
-         - 启动: notebook()
- - 变量类型:Julia是一门动态型语言，也就是说，变量不需要在声明时给定类型，也可以在运行时改变其类型。但是Julia是一门强类型语言，就是说不同类型的变量
-   相互间的操作一般是不允许的。
-```Julia
-a = 2.0
-b = "Hello"
-a + b # Error!
+> [Julia Tutorial from University of Pennsylvania](https://www.sas.upenn.edu/~jesusfv/Chapter_HPC_8_Julia.pdf)  
+> [Julia box](https://www.juliabox.com/) &lt;= 这里附带了一份非常棒的交互式tutorial
+>
+> ### Section 1 : Install
+>
+> * Julia遵循目前流行的软件发行模式：其核心语言和周边package模块分开，而周边package有一个专用的ecosystem进行管理。
+> * 在Linux或者Windows上，Julia都可以直接从官网下载二进制运行程序。也可以通过Atom的IDE\(Juno\)来安装。
+> * 在Julia的REPL中，键盘的\]键代表进入pkg管理模式，;代表进入系统shell模式
+>   * 在pkg管理模式
+>     * st : 显示当前所有的包包的状态
+>     * add xxx : 导入一个新的包包
+>     * rm xxx : 删除一个包包
+>     * up xxx : 更新一个包包
+>       * 安装包包后退出到正常的REPL中，使用using xxx命令来使用这个包包。初次引用会需要一些时间来编译处理这个包包。
+>       * 安装Julia notebook的简单流程：
+>       * 在pkg管理模式中add IJulia
+>       * 在REPL中using IJulia
+>       * 启动: notebook\(\)
+>       * 变量类型:Julia是一门动态型语言，也就是说，变量不需要在声明时给定类型，也可以在运行时改变其类型。但是Julia是一门强类型语言，就是说不同类型的变量
+>
+>         相互间的操作一般是不允许的。
+>
+>         \`\`\`Julia
+>
+>         a = 2.0
+>
+>         b = "Hello"
+>
+>         a + b \# Error!
 
-# 确认a的类型
-typeof(a)
-```
+## 确认a的类型
+
+typeof\(a\)
+
+```text
 ### Section 2 : Fundamental commands
 
 ```Julia
@@ -56,8 +65,10 @@ log(x)
 ```
 
 ### Section 3 : Arrays
+
 在Julia中矩阵是一种基本数据结构，这是Python或者Javascript都不具有的特性。
-```Julia
+
+```julia
 # Julia中的矩阵可以携带任意不同类型的数据
 a = [ "Hello" "world";
       1       2.3]
@@ -67,3 +78,4 @@ m = [1 2 3] # Matrix
 # 数据的访问与Python中一样是用方括号（只有Matlab采用小括号）;另注意Julia中的的元素下标都是从1开始，
 a[1] #=> "Hello"
 ```
+

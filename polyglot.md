@@ -1,9 +1,10 @@
-## Polyglot cheatsheet :monkey:
+# Polyglot cheatsheet :monkey:
 
-### 1. 基本程序结构
+## 1. 基本程序结构
 
-#### C
-```C
+### C
+
+```c
 // 文件命名为xxx.c;编译时用gcc xxx.c生成a.out
 #include <stdio.h>
 
@@ -11,8 +12,10 @@ int main(int argc, char* argv[]){
   printf("Hello world!\n");
 }
 ```
-#### Java
-```Java
+
+### Java
+
+```java
 // 文件命名为xxx.java，注意xxx要和class名字一致;编译时用javac xxx.java，然后用java xxx执行
 public class Hello{
    public static void main(String[] args){
@@ -20,9 +23,10 @@ public class Hello{
    }
 }
 ```
-#### Python
 
-```Python
+### Python
+
+```python
 # 单纯import的话，程序中可以用xxx.yyy来访问module中的函数
 import xxx
 import xxx as X
@@ -41,11 +45,12 @@ import xxx
 import yyy
 from xxx import yyy, zzz
 ```
-#### Javascript
+
+### Javascript
 
 Javascript的代码可以写在html文件里面，也可以建立一个js源文件从html里面引用。引用源文件的方法更加规范，便于管理。
 
-```html
+```markup
 <script> 
 在这里直接写Javascript也不是不可以...
 </script>
@@ -55,7 +60,8 @@ Javascript的代码可以写在html文件里面，也可以建立一个js源文�
 ```
 
 顺便复习一下，html的最简单结构是这样的：
-```html
+
+```markup
 <!DOCTYPE html>
 <html>
 
@@ -68,20 +74,20 @@ Javascript的代码可以写在html文件里面，也可以建立一个js源文�
 </body>
 
 </html>
-
 ```
 
 source.js里就是Javascript本人了:
 
-```Javascript
+```javascript
 // Javascript的字符串也是不区分单双引号，和Python一样
 console.log("Hello world!")
 ```
 
-### 2. 变量声明
+## 2. 变量声明
 
-#### C
-```C
+### C
+
+```c
 // C的语句都是要以分号结束
 int a;
 int a, b, c;
@@ -93,9 +99,10 @@ float e = 1.99;
 
 bool b = true;
 ```
-#### Java
 
-```Java
+### Java
+
+```java
 // Java在变量声明上和C基本保持一致
 int a;
 int a, b, c;
@@ -106,9 +113,9 @@ float e = 1.99;
 boolean b = true;
 ```
 
-#### Python
+### Python
 
-```Python
+```python
 # Python里面是没有显式变量类型声明的
 # 另外，语句的后面一般也不需要分号（都是用换行来区分语句）
 x = 2
@@ -119,6 +126,7 @@ str = "hello"
 print(x); print(str)
 ```
 
-#### Javascript
+### Javascript
 
-### 3. 数组和字符串
+## 3. 数组和字符串
+
